@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PhysicalSensors>
+  <Sensor Type="Accelerometer" ID ="0x73" Exponent="-6" AxisCount="3" Signedness="Signed"/>
+  <Sensor Type="Magnometer" ID ="0x20f" Exponent="-3" AxisCount="3" Signedness="Signed"/>
+  <Sensor Type="Gyro" ID ="0x76" Exponent="-5" AxisCount="3" Signedness="Signed"/>
+  <Sensor Type="AmbientLight" ID ="0x41" Exponent="-3" AxisCount="1" Signedness="Unsigned"/>
+  <Sensor Type="Pressure" ID ="0x31" Exponent="-5" AxisCount="1" Signedness="Unsigned"/>
+  <Sensor Type="Proximity" ID ="0x11" Exponent="0" AxisCount="1" Signedness="Signed"/>
+  <Sensor Type="UV" ID ="0x250" Exponent="0" AxisCount="1" Signedness="Signed"/>
+  <Sensor Type="Humidity" ID ="0x32" Exponent="0" AxisCount="1" Signedness="Signed"/>
+  <Sensor Type="Temperature" ID ="0x33" Exponent="0" AxisCount="1" Signedness="Signed"/>
+</PhysicalSensors>
+    

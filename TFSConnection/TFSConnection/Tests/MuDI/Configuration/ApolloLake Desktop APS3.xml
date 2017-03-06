@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ArrayOfSignalEnumMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>111xxxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+		<EnumStringValue>S0</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>101xxxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+		<EnumStringValue>S3</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>100xxxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure</EnumType>
+		<EnumStringValue>S4,S5</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>000xxxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+		<EnumStringValue>G3</EnumStringValue>
+	</SignalEnumMapping>
+		<SignalEnumMapping>
+		<Signal>
+			<SignalString>111xxxx0xxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.S0IxState, PowerDataStructure </EnumType>
+		<EnumStringValue>S0I3</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>xxxxxxx1xxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.S0IxState, PowerDataStructure </EnumType>
+		<EnumStringValue>Off</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>x0xxxxx0xxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.S0IxState, PowerDataStructure </EnumType>
+		<EnumStringValue>Off</EnumStringValue>
+	</SignalEnumMapping>
+</ArrayOfSignalEnumMapping>

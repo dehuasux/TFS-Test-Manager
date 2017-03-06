@@ -1,0 +1,1562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FdkUiMapping>
+  <Eclipse>
+    <AppPath>C:\Intel_ISS_FDK\Tools\EclipsePlugin\eclipse\eclipse.exe</AppPath>
+    <Directory>C:\Intel_ISS_FDK\Tools\EclipsePlugin\eclipse</Directory>
+    <Workspace>C:\testworkspace</Workspace>
+    <UiExternalData>C:\Intel_ISS_FDK\Tools\PDTEditor\ISS_Sensor_Definitions.xml</UiExternalData>
+    <Metadata>.metadata</Metadata>
+    <ProcessName>eclipse</ProcessName>
+    <MainWindow>
+      <AutomateID/>
+      <Name>Eclipse SDK</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>window</LocalizedControlType>
+      <CloseButton>
+        <AutomateID>Close</AutomateID>
+        <Name>Close</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </CloseButton>
+    </MainWindow>
+    <MainTitle>
+      <AutomateID/>
+      <Name>Java - Eclipse</Name>
+      <ControlType>ControlType.TitleBar</ControlType>
+      <LocalizedControlType>title bar</LocalizedControlType>
+      <Options>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Restore</Name>
+          <Display>Restore</Display>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+          <Options/>
+        </TreeUiElementConfig>
+      </Options>
+    </MainTitle>
+    <Projects>
+      <PackageExplorer>
+        <AutomateID/>
+        <Name>Package Explorer</Name>
+        <ControlType>ControlType.Pane</ControlType>
+        <LocalizedControlType>pane</LocalizedControlType>
+      </PackageExplorer>
+      <Project>
+        <AutomateID/>
+        <Name/>
+        <ControlType>ControlType.TreeItem</ControlType>
+        <LocalizedControlType>tree item</LocalizedControlType>
+      </Project>
+    </Projects>
+
+    <ProjectProperties>
+      <ExplrPackProjectMenu>
+        <AutomateID/>
+        <Name>Menu</Name>
+        <ControlType>ControlType.Menu</ControlType>
+        <LocalizedControlType>menu</LocalizedControlType>
+        <Options>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Properties</Name>
+            <Display>Properties</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+          </TreeUiElementConfig>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Export...</Name>
+            <Display>Export...</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+          </TreeUiElementConfig>
+        </Options>
+      </ExplrPackProjectMenu>
+      <MainWindow>
+        <AutomateID/>
+        <Name>Properties for {0}</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+        <CloseButton>
+          <AutomateID>Close</AutomateID>
+          <Name>Close</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </CloseButton>
+      </MainWindow>
+      <ISSExecutionSettings>
+        <AutomateID/>
+        <Name>ISS Project Settings</Name>
+        <ControlType>ControlType.TreeItem</ControlType>
+        <LocalizedControlType>tree item</LocalizedControlType>
+      </ISSExecutionSettings>
+      <PropTabs>
+        <MenuItemUiElementConfig>
+          <AutomateID/>
+          <Name>Execution Environment</Name>
+          <ControlType>ControlType.TabItem</ControlType>
+          <LocalizedControlType>tab item</LocalizedControlType>
+          <Display>Execution</Display>
+        </MenuItemUiElementConfig>
+        <MenuItemUiElementConfig>
+          <AutomateID/>
+          <Name>Execution Environment</Name>
+          <ControlType>ControlType.TabItem</ControlType>
+          <LocalizedControlType>tab item</LocalizedControlType>
+          <Display>Execution</Display>
+        </MenuItemUiElementConfig>
+      </PropTabs>
+      <OKButton>
+        <AutomateID/>
+        <Name>OK</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </OKButton>
+      <YesButton>
+        <AutomateID/>
+        <Name>Yes</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </YesButton>
+      <WarningWindow>
+        <AutomateID/>
+        <Name>Warning</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+        <CloseButton>
+          <AutomateID>Close</AutomateID>
+          <Name>Close</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </CloseButton>
+      </WarningWindow>
+    </ProjectProperties>
+
+    <ProjectBuild>
+      <BuildProgressPopup>
+        <AutomateID/>
+        <Name>Progress Information</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </BuildProgressPopup>
+      <BuildErrorPopup>
+        <AutomateID/>
+        <Name>Intel ISS plugin error</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </BuildErrorPopup>
+    </ProjectBuild>
+
+   
+    <Export>
+      <MainWindow>
+        <AutomateID/>
+        <Name>Export</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+        <CloseButton>
+          <AutomateID>Close</AutomateID>
+          <Name>Close</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </CloseButton>
+      </MainWindow>
+      <GeneralItem>
+        <AutomateID/>
+        <Name>General</Name>
+        <ControlType>ControlType.TreeItem</ControlType>
+        <LocalizedControlType>tree item</LocalizedControlType>
+      </GeneralItem>
+      <ArchiveFolderItem>
+        <AutomateID/>
+        <Name>Archive File</Name>
+        <ControlType>ControlType.TreeItem</ControlType>
+        <LocalizedControlType>tree item</LocalizedControlType>
+      </ArchiveFolderItem>
+      <ToArchiveFilePath>
+        <AutomateID/>
+        <Name>To archive file:</Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </ToArchiveFilePath>
+      <TargetFolder>
+        <AutomateID/>
+        <Name>Folder:</Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </TargetFolder>
+      <OkButton>
+        <AutomateID/>
+        <Name>OK</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </OkButton>
+
+    </Export>
+
+    <WorkspaceLauncher>
+      <LauncherImage>
+        <AutomateID/>
+        <Name>Workspace Launcher</Name>
+        <ControlType>ControlType.Image</ControlType>
+        <LocalizedControlType>image</LocalizedControlType>
+      </LauncherImage>
+      <MainWindow>
+        <AutomateID/>
+        <Name>Workspace Launcher</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </MainWindow>
+      <WorkspacePath>
+        <AutomateID/>
+        <Name>Workspace:</Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </WorkspacePath>
+      <CheckAsDefault>
+        <AutomateID/>
+        <Name>Use this as the default and do not ask again</Name>
+        <ControlType>ControlType.CheckBox</ControlType>
+        <LocalizedControlType>check box</LocalizedControlType>
+      </CheckAsDefault>
+      <OkButton>
+        <AutomateID/>
+        <Name>OK</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </OkButton>
+      <CancelButton>
+        <AutomateID/>
+        <Name>Cancel</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </CancelButton>
+
+    </WorkspaceLauncher>
+
+
+    <WorkSpaceButton>
+      <AutomateID/>
+      <Name>  \r\nWorkbench\r\n \r\nGo to the workbench</Name>
+      <ControlType>ControlType.Hyperlink</ControlType>
+      <LocalizedControlType>hyperlink</LocalizedControlType>
+    </WorkSpaceButton>
+
+
+
+
+
+
+
+
+    <ToolBar>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Edit PDT</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Edit PDT</Display>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Configure ISS Debugger</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Configure</Display>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Debug ISS Project</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Debug</Display>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Run ISS Project</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Run</Display>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Build ISS Project</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Build</Display>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Add New Virtual Sensor</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Add Virtual Sensor</Display>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Add New Physical Sensor</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Add Physical Sensor</Display>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Help</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <Display>Help</Display>
+      </MenuItemUiElementConfig>
+    </ToolBar>
+    <MenuBar>
+      <TreeUiElementConfig>
+        <AutomateID/>
+        <Name>File</Name>
+        <Display>File</Display>
+        <ControlType>ControlType.MenuItem</ControlType>
+        <LocalizedControlType>menu item</LocalizedControlType>
+        <Options>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>New</Name>
+            <Display>New</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+            <Options>
+              <TreeUiElementConfig>
+                <AutomateID/>
+                <Name>Project...</Name>
+                <Display>Project</Display>
+                <ControlType>ControlType.MenuItem</ControlType>
+                <LocalizedControlType>menu item</LocalizedControlType>
+                <Options/>
+              </TreeUiElementConfig>
+            </Options>
+          </TreeUiElementConfig>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Switch Workspace</Name>
+            <Display>Switch desktop</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+            <Options>
+              <TreeUiElementConfig>
+                <AutomateID/>
+                <Name>Other...</Name>
+                <Display>Other</Display>
+                <ControlType>ControlType.MenuItem</ControlType>
+                <LocalizedControlType>menu item</LocalizedControlType>
+                <Options/>
+              </TreeUiElementConfig>
+            </Options>
+          </TreeUiElementConfig>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Import...</Name>
+            <Display>Import</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+            <Options/>
+          </TreeUiElementConfig>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Export...</Name>
+            <Display>Export</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+            <Options/>
+          </TreeUiElementConfig>
+        </Options>
+      </TreeUiElementConfig>
+      <TreeUiElementConfig>
+        <AutomateID/>
+        <Name>ISS</Name>
+        <Display>ISS</Display>
+        <ControlType>ControlType.MenuItem</ControlType>
+        <LocalizedControlType>menu item</LocalizedControlType>
+        <Options>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Edit PDT</Name>
+            <Display>Edit PDT</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+            <Options/>
+          </TreeUiElementConfig>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Build ISS uDriver\\Algorithm</Name>
+            <Display>Build ISS uDriver\Algorithm</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+            <Options/>
+          </TreeUiElementConfig>
+          <TreeUiElementConfig>
+            <AutomateID/>
+            <Name>Run ISS uDriver\\Algorithm</Name>
+            <Display>Run ISS uDriver\Algorithm</Display>
+            <ControlType>ControlType.MenuItem</ControlType>
+            <LocalizedControlType>menu item</LocalizedControlType>
+            <Options/>
+          </TreeUiElementConfig>
+        </Options>
+      </TreeUiElementConfig>
+    </MenuBar>
+    <ConfirmExit>
+      <MainWindow>
+        <AutomateID/>
+        <Name>Confirm Exit</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </MainWindow>
+      <OKButton>
+        <AutomateID/>
+        <Name>OK</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </OKButton>
+    </ConfirmExit>
+    <Popups>
+      <MainWindow>
+        <AutomateID/>
+        <Name/>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+        <CloseButton>
+          <AutomateID>Close</AutomateID>
+          <Name>Close</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </CloseButton>
+      </MainWindow>
+
+      <PopupsData>
+        <UiConfigOption>
+          <Name>Export</Name>
+          <Value>The uDriver/Algorithm project was exported successfully.</Value>
+          <Tag>Export success</Tag>
+        </UiConfigOption>
+        <UiConfigOption>
+          <Name>Intel ISS plugin error</Name>
+          <Value>Intel ISS plugin error\r\n  Cannot export the project. Exception: C:\Intel_ISS_FDK\Tools\EclipsePlugin\eclipse$NULL$\ProjectSettings.xml (The system cannot find the path specified)</Value>
+          <Tag>Export error</Tag>
+        </UiConfigOption>
+      </PopupsData>
+
+
+
+      <Note>
+        <AutomateID/>
+        <Name/>
+        <ControlType>ControlType.Text</ControlType>
+        <LocalizedControlType>text</LocalizedControlType>
+      </Note>
+      <OkButton>
+        <AutomateID/>
+        <Name>OK</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </OkButton>
+    </Popups>
+  </Eclipse>
+  <PdtEditor>
+    <PdtEditorWindow>
+      <AutomateID/>
+      <Name>Intel® Integrated Sensor Solution - Platform Description Table (PDT) Editor - PDT.bin</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>window</LocalizedControlType>
+    </PdtEditorWindow>
+
+    <SensorsDataGrid>
+      <AutomateID/>
+      <Name>Physical Sensors</Name>
+      <ControlType>ControlType.DataGrid</ControlType>
+      <LocalizedControlType>data grid</LocalizedControlType>
+    </SensorsDataGrid>
+
+    <SensorDataItem>
+      <AutomateID/>
+      <Name>{0}</Name>
+      <ControlType>ControlType.DataItem</ControlType>
+      <LocalizedControlType>item</LocalizedControlType>
+    </SensorDataItem>
+    <EditItemButton>
+      <AutomateID/>
+      <Name>Edit Sensor</Name>
+      <ControlType>ControlType.Button</ControlType>
+      <LocalizedControlType>button</LocalizedControlType>
+    </EditItemButton>
+    <SensorModifierWindow>
+      <AutomateID/>
+      <Name>Device 1 of 1 - Sensor Modifier</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>window</LocalizedControlType>
+    </SensorModifierWindow>
+    <SensorType>
+      <AutomateID/>
+      <Name>{0}</Name>
+      <ControlType>ControlType.ComboBox</ControlType>
+      <LocalizedControlType>combo box</LocalizedControlType>
+    </SensorType>
+    <Vendor>
+      <AutomateID/>
+      <Name>{0}</Name>
+      <ControlType>ControlType.ComboBox</ControlType>
+      <LocalizedControlType>combo box</LocalizedControlType>
+    </Vendor>
+    <Model>
+      <AutomateID/>
+      <Name>{0}</Name>
+      <ControlType>ControlType.ComboBox</ControlType>
+      <LocalizedControlType>combo box</LocalizedControlType>
+    </Model>
+    <Instance>
+      <AutomateID/>
+      <Name></Name>
+      <ControlType>ControlType.Spinner</ControlType>
+      <LocalizedControlType>spinner</LocalizedControlType>
+    </Instance>
+    <InstanceForwardButton>
+      <AutomateID/>
+      <Name>Forward</Name>
+      <ControlType>ControlType.Button</ControlType>
+      <LocalizedControlType>button</LocalizedControlType>
+    </InstanceForwardButton>
+    <BusType>
+      <AutomateID/>
+      <Name>N/A</Name>
+      <ControlType>ControlType.ComboBox</ControlType>
+      <LocalizedControlType>combo box</LocalizedControlType>
+    </BusType>
+    <BusAddress>
+      <AutomateID/>
+      <Name>Bus Address:</Name>
+      <ControlType>ControlType.Edit</ControlType>
+      <LocalizedControlType>edit</LocalizedControlType>
+    </BusAddress>
+    <BusSpeed>
+      <AutomateID/>
+      <Name>Bus Type:</Name>
+      <ControlType>ControlType.ComboBox</ControlType>
+      <LocalizedControlType>combo box</LocalizedControlType>
+    </BusSpeed>
+    <NewCalibrationButton>
+      <AutomateID/>
+      <Name>New Calibration</Name>
+      <ControlType>ControlType.Button</ControlType>
+      <LocalizedControlType>button</LocalizedControlType>
+    </NewCalibrationButton>
+    <OkButton>
+      <AutomateID/>
+      <Name>OK</Name>
+      <ControlType>ControlType.Button</ControlType>
+      <LocalizedControlType>button</LocalizedControlType>
+    </OkButton>
+    <NewCalibrationWindow>
+      <AutomateID/>
+      <Name>New Calibration</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>window</LocalizedControlType>
+    </NewCalibrationWindow>
+    <SensorCalibrationType>
+      <AutomateID/>
+      <Name>{0}</Name>
+      <ControlType>ControlType.DataItem</ControlType>
+      <LocalizedControlType>item</LocalizedControlType>
+    </SensorCalibrationType>
+
+    <CalibrationModifierWindow>
+      <AutomateID/>
+      <Name>Calibration Modifier</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>window</LocalizedControlType>
+    </CalibrationModifierWindow>
+    <SaveAndCloseButton>
+      <AutomateID/>
+      <Name>Save and Close</Name>
+      <ControlType>ControlType.Button</ControlType>
+      <LocalizedControlType>button</LocalizedControlType>
+    </SaveAndCloseButton>
+    <CancelButton>
+      <AutomateID/>
+      <Name>Cancel</Name>
+      <ControlType>ControlType.Button</ControlType>
+      <LocalizedControlType>button</LocalizedControlType>
+    </CancelButton>
+    <IssuesWindow>
+      <AutomateID/>
+      <Name>Issues</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>window</LocalizedControlType>
+    </IssuesWindow>
+    <ContinueButton>
+      <AutomateID/>
+      <Name>Continue</Name>
+      <ControlType>ControlType.Button</ControlType>
+      <LocalizedControlType>button</LocalizedControlType>
+    </ContinueButton>
+    <UnresolvedIssuesWindow>
+      <AutomateID/>
+      <Name>Unresolved Issues</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>Dialog</LocalizedControlType>
+    </UnresolvedIssuesWindow>
+  </PdtEditor>
+  <ProjectWizard>
+     <FdkImportWizard>
+      <ImportRootWindow>
+        <AutomateID/>
+        <Name>Import</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </ImportRootWindow>
+     <ImportRebuildPopupWindow>
+        <AutomateID/>
+        <Name>Import</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </ImportRebuildPopupWindow>
+      <OkRebuildPopupButton>
+          <Name>OK</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </OkRebuildPopupButton>
+    </FdkImportWizard>
+    
+    <Buttons>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>&lt; Back</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <EnumTag>Back</EnumTag>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Next &gt;</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <EnumTag>Next</EnumTag>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Cancel</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <EnumTag>Cancel</EnumTag>
+      </MenuItemUiElementConfig>
+      <MenuItemUiElementConfig>
+        <AutomateID/>
+        <Name>Finish</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+        <EnumTag>Finish</EnumTag>
+      </MenuItemUiElementConfig>
+    </Buttons>
+    <ISHProjectWindow>
+      <AutomateID/>
+      <Name>New ISH project</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>Dialog</LocalizedControlType>
+    </ISHProjectWindow>
+
+    <ProjectsRootWindow>
+      <AutomateID/>
+      <Name>New Project</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>Dialog</LocalizedControlType>
+    </ProjectsRootWindow>
+
+    <ImportRootWindow>
+      <AutomateID/>
+      <Name>Import</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>Dialog</LocalizedControlType>
+    </ImportRootWindow>
+    <!--  <Name>ISS Projects</Name> -->
+    <TreeRoot>
+      <AutomateID/>
+      <Name>Intel ISS Project</Name>
+      <ControlType>ControlType.TreeItem</ControlType>
+      <LocalizedControlType>tree item</LocalizedControlType>
+    </TreeRoot>
+
+    <RootProjectWizard>
+      <WizardISSproject>
+        <AutomateID/>
+        <Name>Intel ISS FW Project</Name>
+        <ControlType>ControlType.TreeItem</ControlType>
+        <LocalizedControlType>tree item</LocalizedControlType>
+      </WizardISSproject>
+      <ProjectName>
+        <AutomateID/>
+        <Name>Project Name:</Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </ProjectName>
+
+      <ExecutionEnvironment>
+        <MenuItemUiElementConfig>
+          <AutomateID/>
+          <Name>Simics</Name>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+          <Display>Simics</Display>
+        </MenuItemUiElementConfig>
+        <MenuItemUiElementConfig>
+          <AutomateID/>
+          <Name>Galileo</Name>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+          <Display>Galileo</Display>
+        </MenuItemUiElementConfig>
+      </ExecutionEnvironment>
+
+      <IssVersion>
+        <AutomateID/>
+        <Name>Compilation Environment:</Name>
+        <ControlType>ControlType.ComboBox</ControlType>
+        <LocalizedControlType>combo box</LocalizedControlType>
+      </IssVersion>
+      <AllowAdjustEmulancher>
+        <AutomateID/>
+        <Name>Allow me to adjust Emulauncher settings each time I run the project.</Name>
+        <ControlType>ControlType.CheckBox</ControlType>
+        <LocalizedControlType>check box</LocalizedControlType>
+      </AllowAdjustEmulancher>
+    </RootProjectWizard>
+
+    <IssPhysicalSensor>
+      <MainWindow>
+        <AutomateID/>
+        <Name>New ISS Physical Sensor</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </MainWindow>
+      <GpioButton>
+        <AutomateID/>
+        <Name>Configure</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </GpioButton>
+      <AddGpioCB>
+        <AutomateID/>
+        <Name>GPIO</Name>
+        <ControlType>ControlType.CheckBox</ControlType>
+        <LocalizedControlType>check box</LocalizedControlType>
+      </AddGpioCB>
+      <GpioWindow>
+        <AutomateID/>
+        <Name>GPIO Information</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </GpioWindow>
+
+      <GpioValWindow>
+        <AutomateID/>
+        <Name>New GPIO</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </GpioValWindow>
+      <AddValButton>
+        <AutomateID/>
+        <Name>Add</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </AddValButton>
+      <GpioName>
+        <AutomateID/>
+        <Name>Name:</Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </GpioName>
+
+      <GpioId>
+        <AutomateID/>
+        <Name>ID:</Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </GpioId>
+      <OkButton>
+        <AutomateID/>
+        <Name>OK</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </OkButton>
+      <CalibrationsButton>
+        <AutomateID/>
+        <Name>Configure</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </CalibrationsButton>
+      <CalibrationsWindow>
+        <AutomateID/>
+        <Name>Supported Calibration Formats</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </CalibrationsWindow>
+      <CalibrationsFormatWindow>
+        <AutomateID/>
+        <Name>New Calibration Format</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+      </CalibrationsFormatWindow>
+      <CaliFormat>
+        <AutomateID/>
+        <Name></Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </CaliFormat>
+    </IssPhysicalSensor>
+    <CommonElements>
+      <ProjectTypes>
+        <TreeUiElementConfig>
+          <AutomateID>263460</AutomateID>
+          <Name>uDriver</Name>
+          <Display>uDriver</Display>
+          <ControlType>ControlType.RadioButton</ControlType>
+          <LocalizedControlType>radio button</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Algorithm</Name>
+          <Display>Algorithm</Display>
+          <ControlType>ControlType.RadioButton</ControlType>
+          <LocalizedControlType>radio button</LocalizedControlType>
+        </TreeUiElementConfig>
+      </ProjectTypes>
+      <VendorOptions>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name> --- Choose Vendor --- </Name>
+          <Display> --- Choose Vendor --- </Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+
+
+      </VendorOptions>
+
+
+      <TargetOSOptions>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Windows</Name>
+          <Display>Windows</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+      </TargetOSOptions>
+
+      <SensorTypes>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name> --- Choose Sensor Type --- </Name>
+          <Display> --- Choose Sensor Type --- </Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+          <EnumTag>All</EnumTag>
+        </TreeUiElementConfig>
+
+      </SensorTypes>
+
+      <IssVersionOptions>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Galileo</Name>
+          <Display>Galileo</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Cherry View</Name>
+          <Display>ISH 2</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Skylake / Kabi Lake</Name>
+          <Display>ISH 3</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Broxton</Name>
+          <Display>ISH 4</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+      </IssVersionOptions>
+
+      <Details>
+        <SenorType>
+          <AutomateID/>
+          <Name>Type:</Name>
+          <ControlType>ControlType.ComboBox</ControlType>
+          <LocalizedControlType>combo box</LocalizedControlType>
+        </SenorType>
+        <Vendor>
+          <AutomateID/>
+          <Name>Vendor:</Name>
+          <ControlType>ControlType.ComboBox</ControlType>
+          <LocalizedControlType>combo box</LocalizedControlType>
+        </Vendor>
+        <Model>
+          <AutomateID/>
+          <Name>Model Name:</Name>
+          <ControlType>ControlType.Edit</ControlType>
+          <LocalizedControlType>edit</LocalizedControlType>
+        </Model>
+        <ID>
+          <AutomateID/>
+          <Name>Model ID:</Name>
+          <ControlType>ControlType.Edit</ControlType>
+          <LocalizedControlType>edit</LocalizedControlType>
+        </ID>
+      </Details>
+
+      <I2CAddress>
+        <AddButton>
+          <AutomateID/>
+          <Name>Add</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </AddButton>
+        <AddWindow>
+          <AutomateID/>
+          <Name>New Address</Name>
+          <ControlType>ControlType.Window</ControlType>
+          <LocalizedControlType>Dialog</LocalizedControlType>
+        </AddWindow>
+        <EditField>
+          <AutomateID/>
+          <!--   <Name>Enter an I2C address:</Name> -->
+          <Name />
+          <ControlType>ControlType.Edit</ControlType>
+          <LocalizedControlType>edit</LocalizedControlType>
+        </EditField>
+        <OkButton>
+          <AutomateID/>
+          <Name>OK</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </OkButton>
+      </I2CAddress>
+
+      <DataSource>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Physical sensor</Name>
+          <Display>Physical sensor</Display>
+          <ControlType>ControlType.RadioButton</ControlType>
+          <LocalizedControlType>radio button</LocalizedControlType>
+          <EnumTag>Physical</EnumTag>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Recorded data (Sensor Simulator supported models only)</Name>
+          <Display>Recorded data</Display>
+          <ControlType>ControlType.RadioButton</ControlType>
+          <LocalizedControlType>radio button</LocalizedControlType>
+          <EnumTag>File</EnumTag>
+          <Options>
+            <TreeUiElementConfig>
+              <AutomateID/>
+              <Name>Choose recorded data file from existing library</Name>
+              <Display>Data file</Display>
+              <ControlType>ControlType.RadioButton</ControlType>
+              <LocalizedControlType>radio button</LocalizedControlType>
+              <Options>
+                <TreeUiElementConfig>
+                  <AutomateID/>
+                  <Name/>
+                  <ControlType>ControlType.ComboBox</ControlType>
+                  <LocalizedControlType>combo box</LocalizedControlType>
+                  <Options>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name> --- Choose Recorded Data File --- </Name>
+                      <Display>Library File</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name>BarometerRow</Name>
+                      <Display>BarometerRow</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name>BarometerLineal</Name>
+                      <Display>BarometerLineal</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name>BarometerStep</Name>
+                      <Display>BarometerStep</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name>AlgGenBarometerRow</Name>
+                      <Display>AlgGenBarometerRow</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name>AlgGenBarometerLineal</Name>
+                      <Display>AlgGenBarometerLineal</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name>AlgGenBarometerStep</Name>
+                      <Display>AlgGenBarometerStep</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                    <TreeUiElementConfig>
+                      <AutomateID/>
+                      <Name>TestPressure</Name>
+                      <Display>TestPressure</Display>
+                      <ControlType>ControlType.ListItem</ControlType>
+                      <LocalizedControlType>list item</LocalizedControlType>
+                    </TreeUiElementConfig>
+                  </Options>
+                </TreeUiElementConfig>
+              </Options>
+            </TreeUiElementConfig>
+            <TreeUiElementConfig>
+              <AutomateID/>
+              <Name>Import new recorded data file:</Name>
+              <Display>Import file</Display>
+              <ControlType>ControlType.RadioButton</ControlType>
+              <LocalizedControlType>radio button</LocalizedControlType>
+              <Options>
+                <TreeUiElementConfig>
+                  <AutomateID/>
+                  <Name>Record name:</Name>
+                  <Display>Record name</Display>
+                  <ControlType>ControlType.Edit</ControlType>
+                  <LocalizedControlType>edit</LocalizedControlType>
+                </TreeUiElementConfig>
+                <TreeUiElementConfig>
+                  <AutomateID/>
+                  <Name>Location:</Name>
+                  <Display>Location</Display>
+                  <ControlType>ControlType.Edit</ControlType>
+                  <LocalizedControlType>edit</LocalizedControlType>
+                </TreeUiElementConfig>
+              </Options>
+            </TreeUiElementConfig>
+          </Options>
+        </TreeUiElementConfig>
+      </DataSource>
+
+      <ReportersTypes>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_bmc150</Name>
+          <Display>accel_bmc150</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_compass_lsm303d</Name>
+          <Display>accel_compass_lsm303d</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_gyro_compass_lsm9ds1</Name>
+          <Display>accel_gyro_compass_lsm9ds1</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_gyro_mpu6500</Name>
+          <Display>accel_gyro_mpu6500</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_gyro_mpu9250</Name>
+          <Display>accel_gyro_mpu9250</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_kxcj9</Name>
+          <Display>accel_kxcj9</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_lis3de</Name>
+          <Display>accel_lis3de</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_lsm303dlhc</Name>
+          <Display>accel_lsm303dlhc</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>accel_mpu6515</Name>
+          <Display>accel_mpu6515</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name></Name>
+          <Display></Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name></Name>
+          <Display></Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name></Name>
+          <Display></Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>als_cm32181</Name>
+          <Display>als_cm32181</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>als_isl29035</Name>
+          <Display>als_isl29035</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>baro_bmp280</Name>
+          <Display>baro_bmp280</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>baro_lps25h</Name>
+          <Display>baro_lps25h</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>baro_lps331ap</Name>
+          <Display>baro_lps331ap</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>baro_temp_humi_bme280</Name>
+          <Display>baro_temp_humi_bme280</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>compass_ak09912</Name>
+          <Display>compass_ak09912</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>compass_ak8963</Name>
+          <Display>compass_ak8963</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>compass_bmc150</Name>
+          <Display>compass_bmc150</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>compass_lis3mdl</Name>
+          <Display>compass_lis3mdl</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>compass_lsm303dlhc</Name>
+          <Display>compass_lsm303dlhc</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>gyro_bmg160</Name>
+          <Display>gyro_bmg160</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>gyro_l3gd20</Name>
+          <Display>gyro_l3gd20</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>gyro_l3gd20h</Name>
+          <Display>gyro_l3gd20h</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>gyro_mpu6515</Name>
+          <Display>gyro_mpu6515</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>human_presence_ak9720</Name>
+          <Display>human_presence_ak9720</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>human_presence_iqs253</Name>
+          <Display>human_presence_iqs253</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>human_presence_stm8t143</Name>
+          <Display>human_presence_stm8t143</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>human_presence_sx9500</Name>
+          <Display>human_presence_sx9500</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>uv_cm3512</Name>
+          <Display>uv_cm3512</Display>
+          <ControlType>ControlType.ListItem</ControlType>
+          <LocalizedControlType>list item</LocalizedControlType>
+        </TreeUiElementConfig>
+      </ReportersTypes>
+    </CommonElements>
+
+
+    <UDriver>
+
+      <Definitions>
+        <AddressFormat>
+          <BaseUiElementConfig>
+            <AutomateID/>
+            <Name>Hexadecimal</Name>
+            <ControlType>ControlType.RadioButton</ControlType>
+            <LocalizedControlType>radio button</LocalizedControlType>
+          </BaseUiElementConfig>
+          <BaseUiElementConfig>
+            <AutomateID/>
+            <Name>Binary</Name>
+            <ControlType>ControlType.RadioButton</ControlType>
+            <LocalizedControlType>radio button</LocalizedControlType>
+          </BaseUiElementConfig>
+        </AddressFormat>
+
+        <BusTypes>
+          <MenuItemUiElementConfig>
+            <AutomateID/>
+            <Name>UART</Name>
+            <ControlType>ControlType.CheckBox</ControlType>
+            <LocalizedControlType>check box</LocalizedControlType>
+            <Display>UART</Display>
+          </MenuItemUiElementConfig>
+          <MenuItemUiElementConfig>
+            <AutomateID/>
+            <Name>I2C</Name>
+            <ControlType>ControlType.CheckBox</ControlType>
+            <LocalizedControlType>check box</LocalizedControlType>
+            <Display>I2C</Display>
+          </MenuItemUiElementConfig>
+        </BusTypes>
+        <GalilieoOptions>
+          <AutomateID/>
+          <Name>Mode:</Name>
+          <ControlType>ControlType.ComboBox</ControlType>
+          <LocalizedControlType>combo box</LocalizedControlType>
+          <Options>
+            <TreeUiElementConfig>
+              <AutomateID/>
+              <Name>Full</Name>
+              <Display>Full</Display>
+              <ControlType>ControlType.ListItem</ControlType>
+              <LocalizedControlType>list item</LocalizedControlType>
+            </TreeUiElementConfig>
+            <TreeUiElementConfig>
+              <AutomateID/>
+              <Name>Light</Name>
+              <Display>Light</Display>
+              <ControlType>ControlType.ListItem</ControlType>
+              <LocalizedControlType>list item</LocalizedControlType>
+            </TreeUiElementConfig>
+          </Options>
+        </GalilieoOptions>
+
+        <SimulateOS>
+          <AutomateID/>
+          <Name>Simulate Target OS</Name>
+          <ControlType>ControlType.CheckBox</ControlType>
+          <LocalizedControlType>check box</LocalizedControlType>
+        </SimulateOS>
+        <TargetOS>
+          <AutomateID/>
+          <Name>Target OS:</Name>
+          <ControlType>ControlType.ComboBox</ControlType>
+          <LocalizedControlType>combo box</LocalizedControlType>
+        </TargetOS>
+
+      </Definitions>
+      <ExtendInfo>
+        <ProceedFinish>
+          <AutomateID/>
+          <Name>Proceed to Finish without adding advanced sensor configurations.</Name>
+          <ControlType>ControlType.CheckBox</ControlType>
+          <LocalizedControlType>check box</LocalizedControlType>
+        </ProceedFinish>
+      </ExtendInfo>
+      <Summary>
+        <ProjectType>
+          <AutomateID>460364</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </ProjectType>
+        <SensorType>
+          <AutomateID>263758</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </SensorType>
+        <Vendor>
+          <AutomateID>722384</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </Vendor>
+        <SubTypeModel>
+          <AutomateID>198208</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </SubTypeModel>
+        <ProjectName>
+          <AutomateID>591090</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </ProjectName>
+        <ProjectDescription>
+          <AutomateID>591286</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </ProjectDescription>
+        <ExecutionEnviroment>
+          <AutomateID>329328</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </ExecutionEnviroment>
+        <RunTargetOS>
+          <AutomateID>263800</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </RunTargetOS>
+        <OS>
+          <AutomateID>198204</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </OS>
+        <ISHVersion>
+          <AutomateID>263802</AutomateID>
+          <Name/>
+          <ControlType>ControlType.Text</ControlType>
+          <LocalizedControlType>text</LocalizedControlType>
+        </ISHVersion>
+
+      </Summary>
+    </UDriver>
+
+
+    <Algorithm>
+      <Reporters>
+        <Add>
+          <AutomateID/>
+          <Name>Add</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </Add>
+        <MainWindow>
+          <AutomateID/>
+          <Name>Reporter Details</Name>
+          <ControlType>ControlType.Window</ControlType>
+          <LocalizedControlType>Dialog</LocalizedControlType>
+        </MainWindow>
+
+        <Reporter>
+          <AutomateID/>
+          <Name>Choose a reporter:</Name>
+          <ControlType>ControlType.ComboBox</ControlType>
+          <LocalizedControlType>combo box</LocalizedControlType>
+        </Reporter>
+        <OkBtn>
+          <AutomateID/>
+          <Name>OK</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </OkBtn>
+
+      </Reporters>
+    </Algorithm>
+
+    <FirmwareImage>
+      <ProjectName>
+        <AutomateID/>
+        <Name>Project Name:</Name>
+        <ControlType>ControlType.Edit</ControlType>
+        <LocalizedControlType>edit</LocalizedControlType>
+      </ProjectName>
+    </FirmwareImage>
+  </ProjectWizard>
+
+  <ImportWizard>
+    <ImportSource>
+      <AutomateID/>
+      <Name>General</Name>
+      <Display>General</Display>
+      <ControlType>ControlType.TreeItem</ControlType>
+      <LocalizedControlType>tree item</LocalizedControlType>
+      <Options>
+        <TreeUiElementConfig>
+          <AutomateID/>
+          <Name>Existing Projects into Workspace</Name>
+          <Display>Existing Projects</Display>
+          <ControlType>ControlType.TreeItem</ControlType>
+          <LocalizedControlType>tree item</LocalizedControlType>
+          <Options/>
+        </TreeUiElementConfig>
+      </Options>
+    </ImportSource>
+    <RootDirectoryRB>
+      <AutomateID/>
+      <Name>Select root directory:</Name>
+      <ControlType>ControlType.RadioButton</ControlType>
+      <LocalizedControlType>radio button</LocalizedControlType>
+    </RootDirectoryRB>
+    <DirectoryPath>
+      <AutomateID/>
+      <Name/>
+      <ControlType>ControlType.Edit</ControlType>
+      <LocalizedControlType>edit</LocalizedControlType>
+    </DirectoryPath>
+    <CheckBoxCopy>
+      <AutomateID/>
+      <Name>Copy projects into workspace</Name>
+      <ControlType>ControlType.CheckBox</ControlType>
+      <LocalizedControlType>check box</LocalizedControlType>
+    </CheckBoxCopy>
+  </ImportWizard>
+
+  <FdkPdt>
+    <FirstTimePopup>
+      <AutomateID/>
+      <Name>PDT Editor</Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>Dialog</LocalizedControlType>
+      <CloseButton>
+        <AutomateID/>
+        <Name>OK</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </CloseButton>
+    </FirstTimePopup>
+    <Editor>
+      <MainWindow>
+        <AutomateID/>
+        <Name>PDT Editor</Name>
+        <ControlType>ControlType.Window</ControlType>
+        <LocalizedControlType>Dialog</LocalizedControlType>
+        <CloseButton>
+          <AutomateID/>
+          <Name>OK</Name>
+          <ControlType>ControlType.Button</ControlType>
+          <LocalizedControlType>button</LocalizedControlType>
+        </CloseButton>
+      </MainWindow>
+    </Editor>
+  </FdkPdt>
+
+  <Emulancher>
+    <MainWindow>
+      <AutomateID/>
+      <Name><![CDATA[Intel® Integrated Sensor Solution Emulauncher]]></Name>
+      <ControlType>ControlType.Window</ControlType>
+      <LocalizedControlType>window</LocalizedControlType>
+      <CloseButton>
+        <AutomateID>Close</AutomateID>
+        <Name>Close</Name>
+        <ControlType>ControlType.Button</ControlType>
+        <LocalizedControlType>button</LocalizedControlType>
+      </CloseButton>
+    </MainWindow>
+  </Emulancher>
+</FdkUiMapping>

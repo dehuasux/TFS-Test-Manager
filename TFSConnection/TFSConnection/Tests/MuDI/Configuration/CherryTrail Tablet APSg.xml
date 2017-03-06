@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Module Name="SignalModule">
+    <SignalConfiguration>
+      <PinMapping>
+        <PinDefinition Name="SUS_PIN" Socket="14" Pin="3" />
+        <PinDefinition Name="S4_PIN" Socket="14" Pin="5" />
+        <PinDefinition Name="S0I3_PIN" Socket="11" Pin="4" />
+      </PinMapping>
+      <ComplexSignals>
+        <ComplexSignal Name="SystemState">
+          <ComplexState Name="S0">
+            <State Name="SUS_PIN" Value="true" />
+            <State Name="S4_PIN" Value="true" />
+            <State Name="S0I3_PIN" Value="true" />
+          </ComplexState>
+          <ComplexState Name="S4,S5">
+            <State Name="SUS_PIN" Value="true" />
+            <State Name="S4_PIN" Value="false" />
+            <State Name="S0I3_PIN" Value="false" />
+          </ComplexState>
+		  <ComplexState Name="G3">
+            <State Name="SUS_PIN" Value="false" />
+            <State Name="S4_PIN" Value="false" />
+			<State Name="S0I3_PIN" Value="false" />
+          </ComplexState>
+          <ComplexState Name="S0I3">
+            <State Name="SUS_PIN" Value="true" />
+            <State Name="S4_PIN" Value="true" />
+            <State Name="S0I3_PIN" Value="false" />
+          </ComplexState>
+        </ComplexSignal>
+      </ComplexSignals>
+    </SignalConfiguration>
+  </Module>
+  <Module Name="RelayModule">
+    <RelayConfiguration>
+      <PinMapping>
+        <PinDefinition Name="DC_PIN" Socket="6" Pin="3" />
+        <PinDefinition Name="AC_PIN" Socket="6" Pin="4" />
+        <PinDefinition Name="PWR_PIN" Socket="6" Pin="5" />
+        <PinDefinition Name="RST_PIN" Socket="6" Pin="6" />
+        <PinDefinition Name="CMOS_PIN" Socket="6" Pin="7" />
+        <PinDefinition Name="EX1_PIN" Socket="6" Pin="8" />
+        <PinDefinition Name="EX2_PIN" Socket="6" Pin="9" />
+		<PinDefinition Name="EX3_PIN" Socket="11" Pin="6" />
+		<PinDefinition Name="EX4_PIN" Socket="8" Pin="5" />
+		<PinDefinition Name="EX5_PIN" Socket="12" Pin="5" />
+		<PinDefinition Name="EX6_PIN" Socket="10" Pin="5" />
+      </PinMapping>
+      <ComplexRelays>
+        <ComplexRelay Name="PowerSource">
+          <ComplexState Name="ACDC">
+            <State Name="AC_PIN" Value="false" />
+            <State Name="DC_PIN" Value="false" />
+          </ComplexState>
+          <ComplexState Name="AC">
+            <State Name="AC_PIN" Value="false" />
+            <State Name="DC_PIN" Value="true" />
+          </ComplexState>
+          <ComplexState Name="DC">
+            <State Name="AC_PIN" Value="true" />
+            <State Name="DC_PIN" Value="false" />
+          </ComplexState>
+          <ComplexState Name="G3">
+            <State Name="AC_PIN" Value="true" />
+            <State Name="DC_PIN" Value="true" />
+          </ComplexState>
+        </ComplexRelay>
+      </ComplexRelays>
+    </RelayConfiguration>
+  </Module>
+  <Module Name="SpiBurnerModule">
+    <SpiBurnerConfiguration>
+      <ChipCommandsValues>
+        <ChipName>flash</ChipName>
+        <ChipId>49719</ChipId>
+        <EraseSector>216</EraseSector>
+        <EraseChip>199</EraseChip>
+        <WritePage>2</WritePage>
+        <Read>3</Read>
+        <WriteEnable>6</WriteEnable>
+        <WriteDisable>4</WriteDisable>
+        <ReadStatus>5</ReadStatus>
+		<BusyMask>3</BusyMask>
+        <BusyStatus>3</BusyStatus>
+        <ReadyStatus>2</ReadyStatus>
+        <DeviceSize>8388608</DeviceSize>
+        <SectorSize>65536</SectorSize>
+        <PageSize>256</PageSize>
+      </ChipCommandsValues>
+	  <VerifyTimes>1</VerifyTimes>
+    </SpiBurnerConfiguration>
+  </Module>    
+  <Module Name="UsbHostModule">
+    <UsbHostConfiguration>
+      <DeviceType>Serial_FTDI</DeviceType>
+      <SerialConfiguration>
+        <Baudrate>115200</Baudrate>
+        <DataBits>8</DataBits>
+        <Parity>None</Parity>
+        <StopBits>One</StopBits>
+        <Handshake>XOnXOff</Handshake>
+      </SerialConfiguration>
+    </UsbHostConfiguration>
+  </Module>
+  <Module Name="GeneralModule">
+    <GeneralConfiguration>
+		<Script>using System.Threading;
+using ApsgClient;
+
+namespace Scripts
+{
+    public class RelayScripts
+    {
+        public const string PWR_SOURCE_NAME = "PowerSource";
+        public const string PWR_SOURCE_G3_NAME = "G3";
+        public const string PWR_SOURCE_AC_NAME = "AC";
+        public const string CMOS_PIN_NAME = "CMOS_PIN";
+        public const string PWR_PIN = "PWR_PIN";
+        public const string RST_PIN = "RST_PIN";
+
+        /// &lt;summary&gt;
+        /// Unconditional Power Down
+        /// &lt;/summary&gt;
+        public static void UnconditionalPower(ModuleMgr moduleMgr)
+        {
+            Power(moduleMgr, 7000);
+        }
+
+        /// &lt;summary&gt;
+        /// Power Button
+        /// &lt;/summary&gt;
+        public static void Power(ModuleMgr moduleMgr)
+        {
+            Power(moduleMgr, 400);
+        }
+
+        /// &lt;summary&gt;
+        /// Power Button
+        /// &lt;/summary&gt;
+        public static void Power(ModuleMgr moduleMgr, int delay)
+        {
+            moduleMgr.RelayModuleV1.SetRelayState(PWR_PIN, bool.TrueString, bool.FalseString, delay);
+		}
+
+        /// &lt;summary&gt;
+        /// Performing Reset
+        /// &lt;/summary&gt;
+        public static void Reset(ModuleMgr moduleMgr)
+        {
+            Reset(moduleMgr, 400);
+        }
+
+        /// &lt;summary&gt;
+        /// Performing Reset
+        /// &lt;/summary&gt;
+        public static void Reset(ModuleMgr moduleMgr, int delay)
+        {
+            moduleMgr.RelayModuleV1.SetRelayState(RST_PIN, bool.TrueString, bool.FalseString, delay);
+		}
+		
+        /// &lt;summary&gt;
+        /// Perform Clear Cmos Operation using the given delays
+        /// &lt;/summary&gt;
+        public static void ClearCmos(ModuleMgr moduleMgr)
+        {
+            ClearCmos(moduleMgr, 10000, 8000, 10000, 2000);
+        }
+		
+        /// &lt;summary&gt;
+        /// Perform Clear Cmos Operation using the given delays
+        /// &lt;/summary&gt;
+        public static void ClearCmos(ModuleMgr moduleMgr, int delayAfterFirstG3, 
+										int delayAfterFirstAc, int delayAfterSecondG3, int delayAfterCmos)
+        {
+            moduleMgr.RelayModuleV1.SetRelayState(PWR_SOURCE_NAME, PWR_SOURCE_G3_NAME);
+            Thread.Sleep(delayAfterFirstG3);
+            moduleMgr.RelayModuleV1.SetRelayState(CMOS_PIN_NAME, bool.TrueString);
+            Thread.Sleep(1000);
+            moduleMgr.RelayModuleV1.SetRelayState(PWR_SOURCE_NAME, PWR_SOURCE_AC_NAME);
+            Thread.Sleep(delayAfterFirstAc);
+            moduleMgr.RelayModuleV1.SetRelayState(PWR_SOURCE_NAME, PWR_SOURCE_G3_NAME);
+            Thread.Sleep(delayAfterSecondG3);
+            moduleMgr.RelayModuleV1.SetRelayState(CMOS_PIN_NAME, bool.FalseString);
+            Thread.Sleep(delayAfterCmos);
+            moduleMgr.RelayModuleV1.SetRelayState(PWR_SOURCE_NAME, PWR_SOURCE_AC_NAME);
+        }
+    }
+}
+
+		</Script>
+    </GeneralConfiguration>
+  </Module>
+  <Module Name="PostCodeModule">
+    <PostCodeConfiguration>
+      <I2CSlaveAddress>34</I2CSlaveAddress>
+      <SocketNumber>10</SocketNumber>
+    </PostCodeConfiguration>
+  </Module>
+</Configuration>

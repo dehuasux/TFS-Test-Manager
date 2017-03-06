@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SpiConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <SpiFlashTypes>
+		<FlashType>
+			<FlashId>4013954816</FlashId>
+			<FlashName>WINBOND_W25Q64BV</FlashName>
+			<ChipSize>8388608</ChipSize>
+			<PageSize>256</PageSize>
+			<BlockSize>65536</BlockSize>
+			<CommandsTable>
+				<FastRead>11</FastRead>
+				<Read>3</Read>
+				<BlockErase>216</BlockErase>
+				<ChipErase>96</ChipErase>
+				<Write>2</Write>
+				<WriteEnable>6</WriteEnable>
+				<WriteDisable>4</WriteDisable>        
+				<ReadStatus>5</ReadStatus>
+				<WriteStatus>1</WriteStatus>
+			</CommandsTable>
+		</FlashType> 
+        <FlashType>
+			<FlashId>4013955072</FlashId>
+			<FlashName>WINBOND_W25Q128FV</FlashName>
+			<ChipSize>16777216</ChipSize>
+			<PageSize>256</PageSize>
+			<BlockSize>65536</BlockSize>
+			<CommandsTable>
+				<FastRead>11</FastRead>
+				<Read>3</Read>
+				<BlockErase>216</BlockErase>
+				<ChipErase>96</ChipErase>
+				<Write>2</Write>
+				<WriteEnable>6</WriteEnable>
+				<WriteDisable>4</WriteDisable>        
+				<ReadStatus>5</ReadStatus>
+				<WriteStatus>1</WriteStatus>
+			</CommandsTable>
+		</FlashType> 		
+	</SpiFlashTypes>
+</SpiConfig>

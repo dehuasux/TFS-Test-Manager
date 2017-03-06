@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<FeaturesConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<KbEmulatorConfiguration>
+			<SelectedDevice />
+		</KbEmulatorConfiguration>
+		<PowerControlConfiguration>
+			<SelectedDevice />
+			<PowerHoldTime>400</PowerHoldTime>
+			<UnconditionalPowerHoldTime>7000</UnconditionalPowerHoldTime>
+			<ResetHoldTime>400</ResetHoldTime>
+			<ClearCmosDelayAfterFirstG3>10000</ClearCmosDelayAfterFirstG3>
+			<ClearCmosDelayAfterFirstAc>800</ClearCmosDelayAfterFirstAc>
+			<ClearCmosDelayAfterSecondG3>10000</ClearCmosDelayAfterSecondG3>
+			<ClearCmosDelayAfterOpeningClearComs>2000</ClearCmosDelayAfterOpeningClearComs>
+		</PowerControlConfiguration>
+		<SpiBurnerConfiguration>
+			<SelectedDevice />
+		</SpiBurnerConfiguration>
+		<StateDetectConfiguration>
+			<SelectedDevice />
+		</StateDetectConfiguration>
+	</FeaturesConfiguration>
+	<DevicesConfiguration />
+</Configuration>

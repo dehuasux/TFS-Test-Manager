@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPlatformToFlashMap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PlatformToFlashMap>
+    <PlatformVersion>None</PlatformVersion>
+    <FlashId>4294967295</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>Me8</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>Me9</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>Me9_5</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>Me10</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>Me11</PlatformVersion>
+    <FlashId>4013955072</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>Me12</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>CherryTrail</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>BayTrail</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+  <PlatformToFlashMap>
+    <PlatformVersion>Braswell</PlatformVersion>
+    <FlashId>4013954816</FlashId>
+  </PlatformToFlashMap>
+</ArrayOfPlatformToFlashMap>

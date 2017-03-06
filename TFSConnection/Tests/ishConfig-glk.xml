@@ -1,0 +1,238 @@
+<Root>
+	<!-- Configs that refer to ISH-API-->
+	<IshAutomationCommonConfig>
+		<!-- rather to log each event-->
+		<LogSensorEvents>false</LogSensorEvents>
+		<SleepAfterUnsubscribe>2000</SleepAfterUnsubscribe>
+		<SleepAfterDeviceDisable>10000</SleepAfterDeviceDisable>
+		<SleepAfterDeviceEnable>20000</SleepAfterDeviceEnable>
+		<SleepBeforeSettingProperty>0</SleepBeforeSettingProperty>
+		<SleepAfterSettingProperty>0</SleepAfterSettingProperty>
+		<WaitForDutToRestart>60000</WaitForDutToRestart>
+		<SleepAfterSetPowerState>40000</SleepAfterSetPowerState>
+		<SleepAfterG3AndAc>500</SleepAfterG3AndAc>
+		<!-- if the Platform is fast Boot -->
+		<FastBoot>true</FastBoot>
+		<!--
+		########################################################
+		#                                                      #
+		#             YOUR DUT IP                              #
+		#                                                      #
+		########################################################
+		-->
+		<RemoteIp>127.0.0.1</RemoteIp>
+		<UserName>Administrator</UserName>
+		<Password>12</Password>
+		<!-- CHT | SKL | KBL | BXT | BXT_P | BXTP_I | BXT_P_GLK | BXT_M | CNL | ICL -->
+		<PlatformType>KBL</PlatformType>
+		<!-- AIC | RR3 | NS | NS_1_3 | NS_1_5 | NS_1_6 | AOB -->
+		<SensorBoardType>RR3</SensorBoardType>
+		<!-- NONE | BOM1 | BOM2 | BOM3 | BOM4 | BOM5 -->
+		<Bom>BOM1</Bom>	
+		<!-- DUT's OS. default is windows. supporting: [ WINDOWS | ANDROID | LINUX ]-->
+		<DutOs>WINDOWS</DutOs>
+		<!-- Win7 | Win8 | Win10 | Lollipop | Marshmallow | Nougat | Ubuntu | Yocto -->
+		<DutOsVersion>Win10</DutOsVersion>
+		<!-- x64 | x32 -->
+		<DutOsBit>x64</DutOsBit>
+		<!-- Consumer | Corporate -->
+		<PlatformSku>Consumer</PlatformSku>
+		<RvpType>RVP3</RvpType>
+		<!-- A | B | C | D -->
+		<SiliconStepping>C</SiliconStepping>
+		<IsPlatformProduction>false</IsPlatformProduction>
+		<SavePlatformSetup>false</SavePlatformSetup>		
+		<!-- path on console management to SensorList -->
+		<SensorListPath>SensorList</SensorListPath>
+		<!-- All relative paths on console management (on all sections!!!), should be relative to this path-->
+		<ConsoleManagmentRelativeFolder>..\Resources</ConsoleManagmentRelativeFolder>
+		<!-- Workspace-->
+		<KitWorkspacePath>\\10.12.228.160\ISH\Workspace</KitWorkspacePath>
+		<!-- All relative paths on DUT (on all sections!!!), should be relative to this path-->
+		<DutRelativeFolder>C:\ISH\Resources</DutRelativeFolder>
+		<!-- The Controller root path of the kit, contains related tools and SW, release notes, etc. -->
+		<ControllerRootKitFolder>C:\ISH\KITs\LatestKIT</ControllerRootKitFolder>
+		<!-- The DUT root path of the kit, contains related tools and SW, release notes, etc. -->
+		<DutRootKitFolder>C:\ISH\KITs\LatestKIT</DutRootKitFolder>
+		<!-- The DUT root path of the Drivers Installers. -->
+		<DutRootDriversFolder>C:\ISH\Drivers</DutRootDriversFolder>
+		<!-- PsTools | Xosa | Adb -->
+		<OsActionsType>PsTools</OsActionsType>
+		<!-- SensorViewer | Xosa | AdbAsdt | AndriodService-->
+		<RecordSensorsType>SensorViewer</RecordSensorsType>
+		<InitXsoa>true</InitXsoa>
+		<WorkaroundUseXosaForPsexecFileOperations>true</WorkaroundUseXosaForPsexecFileOperations>
+		<ReadMinReportIntervalFromFile>false</ReadMinReportIntervalFromFile>
+		<!-- Windows7 | Windows8 | Windows10 -->
+		<WinSensorApi>Windows7</WinSensorApi>
+		<!-- path on CM to psexec tools -->
+		<PsToolsDirPath>PSTools</PsToolsDirPath>
+		<SensorViewPath>SensorViewer</SensorViewPath>
+		<SensorViewLocalPath>SensorViewer</SensorViewLocalPath>
+		<!-- path on DUT to pnr tool -->
+		<PnrExeFile>PNRTool\PNRTool.exe</PnrExeFile>
+  		<!-- path on DUT to smhi file path -->
+		<SmhiToolFilePath>SMHITool\SMHITool.exe</SmhiToolFilePath>
+		<CreateSmhiLogToolPath>SMHITool\create_smhilog.exe</CreateSmhiLogToolPath>
+		<RobotPort>16</RobotPort>
+		<SerialPort>16</SerialPort>
+  		<!-- Apsg | Aps3 -->
+		<ApsDeviceType>Aps3</ApsDeviceType>
+		<!-- For Apsg -> IP, for Aps3 -> ID -->
+		<ApsDeviceId>99Z9LUEHB</ApsDeviceId>
+		<UseApsSignals>false</UseApsSignals>
+		<!-- path on console management to Properties Tables Path files -->
+		<PropertiesTablePath>PropertiesTables</PropertiesTablePath>
+		<!-- Properties Table Prefix-->	
+		<PropertiesTablePrefix>PropertiesTest_CompareTable_</PropertiesTablePrefix>
+		<!-- path on console management to directory for sensor simulator application-->
+		<SensorSimulatorPath></SensorSimulatorPath>
+
+		<!-- configuration for ISSCollector-->
+		<IssCollectorIp>127.0.0.1</IssCollectorIp>
+		<!-- if the romote ip is 127.0.0.1 , the userName/password can be ignored--> 
+		<IssCollectorUserName>Administrator</IssCollectorUserName>
+		<IssCollectorPassword>P@ssw0rd</IssCollectorPassword>
+		
+		<!-- I2C port for reading the FW trace-->
+		<IssCollectorI2CPort>30</IssCollectorI2CPort>
+		<!-- Full path on IssCollector console to IssCollector.exe-->
+		<IssCollectorPath>Tools\Trace</IssCollectorPath>
+		<!-- Full path on IssCollector for IssCollector config files
+				The files should be with the names: "TraceCatalog.xml" and "TraceComponents.xml"-->
+		<IssCollectorConfigFilesPath>Tools\Trace\SI</IssCollectorConfigFilesPath>
+		<!-- in case you run the tests with simics lite you need to provide here the simics lite Guid {0xb6b00514,0x397f,0x4209,{0xa2,0x3a,0x7a,0xdc,0x4f,0x66,0x81,0xd0}} -->
+		<HeciDeviceGuid></HeciDeviceGuid>
+	</IshAutomationCommonConfig>
+	
+	<IshTesterConfig>
+		<!-- path to pnr playback files-->
+		<PnrPlabackFilesDir>PlaybackAndRecord</PnrPlabackFilesDir>
+		<!-- pnr playback files post fix -->
+		<PnrPlaybackFilePostfix>30sec5sec.bin</PnrPlaybackFilePostfix>
+		<!-- pnr playback files recording length -->
+		<PnrPlaybackTimeInSeconds>30</PnrPlaybackTimeInSeconds>
+		<!-- if the framework will collect FW trace with IssCollector for each test-->
+		<LogFWTrace>false</LogFWTrace>
+		<!-- if Configuration Driver Verifier - the options is No, Yes and Ignore-->
+		<ConfigurationDriverVerifier>Ignore</ConfigurationDriverVerifier>
+		<!-- if ignore Logging and recovery flow-->
+		<IgnoreLoggingAndRecovery>true</IgnoreLoggingAndRecovery>
+	</IshTesterConfig>
+  
+	<SensorCoreTestsConfig>
+		<!-- set to 0 to get the first record-->
+		<ReportIntervalStartFromRecord>4</ReportIntervalStartFromRecord>
+		<MissedRecordsTolerance>0.3</MissedRecordsTolerance>
+		<KpiStartFromRecord>30</KpiStartFromRecord>
+		<KpiRecordsTolerance>0.01</KpiRecordsTolerance>
+		<KpiAllIntervalsShouldBeAbove>0</KpiAllIntervalsShouldBeAbove>
+		<MaxIntervalAloudUnderMin>0.00000001</MaxIntervalAloudUnderMin>
+		<MaxDifferentIntervals>0.3</MaxDifferentIntervals>
+		<MaxSensitivityErrors>0.3</MaxSensitivityErrors>
+		<PollingMissedRecordsTolerance>0.2</PollingMissedRecordsTolerance>
+		<PollingMilisDiffTillGetsData>400</PollingMilisDiffTillGetsData>
+		<PollingStartFromRecord>5</PollingStartFromRecord>
+	</SensorCoreTestsConfig>
+
+	<PowerTestsConfig>
+		<!-- smhi file path on DUT-->
+		<HeciPath>GetCountersTool</HeciPath>
+		<!-- path on DUT to temp-->
+		<TempPath>Temp</TempPath>
+		<!-- path on DUT to ... -->
+		<RemotePath>Temp</RemotePath>
+		<!-- path on console management to counters tool-->
+		<ParseCountersPath>GetCountersTool</ParseCountersPath>
+		<!-- path on console management to sensor viewer tool-->
+		<SensorViewLocalPath>Sensorviewer</SensorViewLocalPath>
+		<!-- path on Dut to sensor viewer tool-->
+		<SensorViewPath>Sensorviewer</SensorViewPath>
+	</PowerTestsConfig>
+  
+	<BatTestsConfig>
+		<!-- path on the DUT from the ISH KIT Folder to the Image file-->
+		<IshReleaseNotesPrefix>ISH_</IshReleaseNotesPrefix>
+		<IshReleaseNotesPostfix>_ReleaseNotes.txt</IshReleaseNotesPostfix>
+		<IshSwFilePath>SW\Drivers</IshSwFilePath>
+		<IshInstallerFilePath>SW\Installer</IshInstallerFilePath>
+		<IshInstallerFileName>SetupISS.exe</IshInstallerFileName>
+		<MeInstallerFilePath>ME_SW</MeInstallerFilePath>
+		<MeInstallerFileName>SetupME.exe</MeInstallerFileName>
+		<TxeInstallerFilePath>TXE_SW</TxeInstallerFilePath>
+		<TxeInstallerFileName>SetupTXE.exe</TxeInstallerFileName>
+		<PressureHighvalue>0.95</PressureHighvalue>
+		<PressureLowvalue>0.92</PressureLowvalue>
+	</BatTestsConfig>
+	
+	<SoftwareWindowsTestsConfig>
+		<GeneralIndex>2</GeneralIndex>
+		<SwToolsPath>SWTools</SwToolsPath>
+		<SetSmhiFileName>SET_SMHI.bin</SetSmhiFileName>
+		<LoadableFileName>loadable.bin</LoadableFileName>	
+	</SoftwareWindowsTestsConfig>
+  
+	<PropertiesTestsConfig>
+		<!-- path on console management to Properties Tables Path files -->
+		<PropertiesTablePath>PropertiesTables</PropertiesTablePath>
+		<!-- Properties Table Prefix-->	
+		<PropertiesTablePrefix>PropertiesTest_CompareTable_</PropertiesTablePrefix>
+	</PropertiesTestsConfig>
+	
+	<AlgoTestsConfig>
+		<AlgoDataFolder>AlgoData</AlgoDataFolder>
+		<ReportIntervalStartFromRecord>4</ReportIntervalStartFromRecord>
+		<MissedRecordsTolerance>0.3</MissedRecordsTolerance>
+		<!-- HYDRA | PNR -->
+		<SimulatorTypes>PNR</SimulatorTypes>
+        
+        <!-- full path to CalibrationAnalysisTool.exe that will be used for the tests -->
+	<AnalysisToolExecutablePath/>     
+        
+        <!-- full path to Analysis tool input logFile.xml 
+             this file will be copied and manipulated by automation -->
+	<AnalysisInputLogFilePath/>
+
+        <!-- full path to the original resultCalibration.xml 
+             this file will be used to verify test results -->
+	<AnalysisOriginalCalibrationResultsPath/>
+	</AlgoTestsConfig>
+	
+	<E2E_TestsConfig>
+		<!-- True for full automated and false for semi-automated -->
+		<FullAutomated>False</FullAutomated>
+		<!-- Toast Duration in seconds, for semi automated tests -->
+		<ToastDuration>5</ToastDuration>
+		<!-- expected value for each sensor -->
+		<Value_Barometer>0.9394</Value_Barometer>
+		<!-- Allowed tolerance for each sensor -->
+		<Tolerance_Accelerometer>0.2</Tolerance_Accelerometer>
+		<Tolerance_Gravity>0.2</Tolerance_Gravity>
+		<Tolerance_Barometer>1.0</Tolerance_Barometer>
+		<Tolerance_SimpleDeviceOrientation>0</Tolerance_SimpleDeviceOrientation>
+		<Tolernace_Gyro>15</Tolernace_Gyro>
+		<!-- In order to check screen rotation on position tests you must use internal screen, such as MIPI,
+			 enable and start sensors services, and allow auto-rotate option	 -->
+		<CheckScreenRotationOnPositionTests>False</CheckScreenRotationOnPositionTests>
+	</E2E_TestsConfig>
+
+	<SensorToolsTestsConfig>
+  		<!--DUT relative path for TraceConfigTool.exe (related to DutRootKitFolder)-->
+		<TraceConfigToolPath>SW\TraceTools\TraceConfigTool\Windows</TraceConfigToolPath>
+		<!--Root Path on the DUT for MeInfo MeManuf tools related to DutRootKitFolder-->
+		<MeInfoManufToolsRootPath>Tools</MeInfoManufToolsRootPath>
+		 <!--Controller relative path for PDTEditor folder (related to ControllerRootKitFolder)-->
+		<PdtEditorToolPath>Tools\PDTEditor</PdtEditorToolPath>
+	</SensorToolsTestsConfig>
+    	
+	<SoftwareTestsConfig>
+		<HeciTesterPath>//hecitester</HeciTesterPath>
+		<HeciDevices>HECI</HeciDevices>
+		<HidDevices>HID</HidDevices>
+	</SoftwareTestsConfig>
+    
+    <LinuxTestsConfig>
+		<IIOCheckSensorPath>..\Resources\UbuntuInstallation\iiochecksensor</IIOCheckSensorPath>
+	</LinuxTestsConfig>
+  
+</Root>

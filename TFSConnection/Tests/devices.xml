@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Devices>
+  <Device Name="Intel(R) ISH Interface CHV" ID="PCI\VEN_8086&amp;DEV_22D8"/>
+  <Device Name="Intel(R) ISH Interface SPT" ID="PCI\VEN_8086&amp;DEV_9D35"/>
+  <Device Name="Intel(R) ISH Interface BXT" ID="PCI\VEN_8086&amp;DEV_5AA2"/>
+  <Device Name="Intel(R) ISH Interface CNL" ID="PCI\VEN_8086&amp;DEV_9DFC"/>
+  <Device Name="ISH Dynamic Bus Enumerator" ID="{DEA5AE2A-D1FD-438A-A091-CBD484788435}\ISH_BUS"/>
+  <Device Name="HID PCI Minidriver for ISS" ID="{DEA5AE2A-D1FD-438A-A091-CBD484788436}\VID_8086*00"/>
+</Devices>

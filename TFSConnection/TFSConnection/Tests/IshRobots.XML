@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IshRobots</name>
+    </assembly>
+    <members>
+        <member name="M:IshRobots.IRobotApi.SetOrientation(Orientation.Orientation3D)">
+            <summary>
+            Set orientation to the device on the robot.
+            The method doesn't promise what is the path going to this orientation
+            </summary>
+            <param name="orientation"></param>
+            <returns>Task that enables waiting for operation complited</returns>
+        </member>
+        <member name="M:IshRobots.IRobotApi.GetOrientation">
+            <summary>
+            Gets the device orientation
+            </summary>
+            <returns>the current device orientation</returns>
+        </member>
+        <member name="P:IshRobots.IRobotApi.SimpleOrientationsOperator">
+            <summary>
+            Interface for simple orientations and rotationd between Simple Orientations
+            </summary>
+        </member>
+        <member name="P:IshRobots.ISimpleOrientationsOperator.RotationSpeed">
+            <summary>
+            the spped of the all rotations
+            </summary>
+        </member>
+        <member name="P:IshRobots.ISimpleOrientationsOperator.CurrentSimpleOrientation">
+            <summary>
+            Gets the current simple orientation
+            </summary>
+        </member>
+        <member name="M:IshRobots.ISimpleOrientationsOperator.SetSimpleOrientation(IshRobots.SimpleOrientation)">
+            <summary>
+            Sets the device in the given simple orientation
+            if the device is currently on simple orientation, the orientation will be around one axis (X, Y or Z)
+            and the direction will be the shortest direction to go to this orientation
+            in case of multiple shortest soulotions the priority order is: Z, X, Y and CCW orientation
+            </summary>
+            <param name="orientation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IshRobots.ISimpleOrientationsOperator.RotateToSimpleOrientation(IshRobots.SimpleOrientation,IshRobots.Axis,IshRobots.Direction,System.Int32)">
+            <summary>
+            Rotate the device from one simple orientation to another simple orientation
+            The method "SetSimpleOrientation" should called before calling this methosd, to enshure the device is in simple orientation.
+            </summary>
+            <param name="orientation">the target simple orientation</param>
+            <param name="rotationAxis">around which axis to make the rotation</param>
+            <param name="direction">rotation direction</param>
+            <param name="wholeRound">make full rounds before going to wanted orientation (default round is 0)</param>
+            <returns>Task that enables waiting for operation complited</returns>
+            the mothed will throw exception if:
+            1: the device is currently not in simple orientation
+            2: the given axis isn't valid (for example: moving from FaceUp to FaceDown around Z axis, isn't valid)
+        </member>
+        <member name="M:IshRobots.ISimpleOrientationsOperator.SetNorth(System.Double,IshRobots.Direction,System.Int32)">
+            <summary>
+            Set the North of the device
+            The method "SetSimpleOrientation" should called before calling this methosd, to enshure the device is in simple orientation.
+            </summary>
+            <param name="north">the north angle</param>
+            <param name="direction">rotation direction, default: Undefined- means the shortest direction</param>
+            <param name="wholeRound">make full rounds before going to wanted angle (default round is 0)</param>
+            <returns></returns>
+            the mothed will throw exception if:
+            The device is currently not in simple orientation
+        </member>
+        <member name="M:IshRobots.ISimpleOrientationsOperator.GetNorth">
+            <summary>
+            Gets the current North angle
+            The method "SetSimpleOrientation" should called before calling this methosd, to enshure the device is in simple orientation.
+            </summary>
+            <returns>the north angle</returns>
+            the mothed will throw exception if:
+            The device is currently not in simple orientation
+        </member>
+        <member name="P:IshRobots.PersonalRobot.IArmStrongRobotApi.DefaultSpeed">
+            <summary>
+            the default robot speed
+            </summary>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.MoveToAngle(IshRobots.PersonalRobot.Motors,System.Double,System.UInt16,IshRobots.Direction,System.Int32)">
+            <summary>
+            Moves the robot to absoult angle
+            </summary>
+            <param name="motor"></param>
+            <param name="angle"></param>
+            <param name="speed"></param>
+            <param name="direction"></param>
+            <param name="wholeRounds">If to add whole rounds after reach to the wanted angle</param>
+            <returns>Task that can ba awaited for move was finished</returns>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.Move(IshRobots.PersonalRobot.Motors,System.Single,System.UInt16,IshRobots.Direction)">
+            <summary>
+            Moves the robot to relative angle from the current position
+            </summary>
+            <param name="motor"></param>
+            <param name="angle"></param>
+            <param name="speed"></param>
+            <param name="direction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.SetZeroPoint(IshRobots.PersonalRobot.Motors)">
+            <summary>
+            sets the current motor position to be as zero position
+            </summary>
+            <param name="motor"></param>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.StartJogging(IshRobots.PersonalRobot.Motors,IshRobots.Direction,System.UInt16)">
+            <summary>
+            Starts jogging the motor
+            </summary>
+            <param name="motor"></param>
+            <param name="direction"></param>
+            <param name="speed"></param>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.StopJogging(IshRobots.PersonalRobot.Motors)">
+            <summary>
+            Stops Jogging the motor
+            </summary>
+            <param name="motor"></param>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.GetMotorPosition(IshRobots.PersonalRobot.Motors)">
+            <summary>
+            Gets the motor position
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.GetMotorPhysicalPosition(IshRobots.PersonalRobot.Motors)">
+            <summary>
+            Get the motor physical position from the switch
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.IsRunning">
+            <summary>
+            indicate if the robot is running
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.GetMotorParams(IshRobots.PersonalRobot.Motors)">
+            <summary>
+            Gets motor statistic data about the robot acurrecy 
+            the data stored from the switch encounters and can indicate if the robot works well 
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.ResetMotorParams(IshRobots.PersonalRobot.Motors)">
+            <summary>
+            resets the motor statistics params
+            </summary>
+            <param name="motor"></param>
+        </member>
+        <member name="M:IshRobots.PersonalRobot.IArmStrongRobotApi.GetMotorState(IshRobots.PersonalRobot.Motors)">
+            <summary>
+            get the motor state
+            The available states are: 
+                    Idle, Moving, Jogging and Calibrating
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
