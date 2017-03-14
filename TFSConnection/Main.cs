@@ -28,6 +28,7 @@ namespace TFSTest
 {
     internal class Program
     {
+        public static bool Flag = true;
         // get test case name
         public static string GetTestCaseName(string auTestName)
         {
@@ -88,6 +89,7 @@ namespace TFSTest
                             string autoTestName = testcase.CustomFields["Automation Test Name"].Value.ToString();
                             if (autoTestName.IndexOf("/run=") == -1)
                             {
+                                Flag = false;
                                 log.Info("ID: " + testcase.Id);
                                 log.Info("Title: " + testcase.Title);
                                 log.Info("Tfs Path: " + testcase.Area);
@@ -118,13 +120,21 @@ namespace TFSTest
                                     {
                                         // judge a test case have a certain attribute
                                         if (nunitOper.HasTestCaseAttributeFor(method))
-                                            // get testcases with testcase attribute
+                                        {
                                             testCaseCollection.AddRange(nunitOper.GetTestCasesWithTestCaseAttribute(method));
+                                        }
                                         else if (nunitOper.HasTestSourceCaseAttributeFor(method))
-                                            // get testcases with testcasesource attribute
+                                        {
                                             testCaseCollection.AddRange(nunitOper.GetTestCaseWithTestSourceCaseAttribute(method));
+                                        }
+                                        else if (nunitOper.HasValueAttributeFor(method))
+                                        {                                            
+                                            testCaseCollection.AddRange(nunitOper.GetTestCasesWithParameter(method));
+                                        }
                                         else
+                                        {   
                                             testCaseCollection.Add(nunitOper.BuildTestMethod(method));
+                                        }
                                     }
                                 }
                             }
@@ -134,6 +144,7 @@ namespace TFSTest
                             // judge whether tests folder hava test case, if not , print these test case and its propety.
                             if (!testCaseCollection.Contains(testCaseName))
                             {
+                                Flag = false;
                                 log.Info("ID: " + testcase.Id);
                                 log.Info("Title: " + testcase.Title);
                                 log.Info("Tfs Path: " + testcase.Area);
@@ -145,6 +156,7 @@ namespace TFSTest
                         }
                         else
                         {
+                            Flag = false;
                             log.Info("ID: " + testcase.Id);
                             log.Info("Title: " + testcase.Title);
                             log.Info("Tfs Path: " + testcase.Area);
@@ -154,6 +166,11 @@ namespace TFSTest
                             log.Info("FAIL: dll not found");
                             log.Info("");
                         }
+                    }
+                    if(Flag)
+                    {
+                        log.Info("PASS: no errors.");
+                        log.Info("");
                     }
                     log.Info("------------------------------------");
                 }
