@@ -174,7 +174,7 @@ namespace TFSConnection.NUnitCommon
         {
             ParameterInfo[] parameters = method.GetParameters();
             IEnumerable[] Sources = new IEnumerable[parameters.Length];
-            //NUnit.Core.Builders.InlineDataPointProvider dataPointProviders = new NUnit.Core.Builders.InlineDataPointProvider();
+            NUnit.Core.Builders.InlineDataPointProvider dataPointProviders = new NUnit.Core.Builders.InlineDataPointProvider();
             for (int i = 0; i < parameters.Length; i++)
                 Sources[i] = dataPointProviders.GetDataFor(parameters[i]);
             IEnumerator[] enumerators = new IEnumerator[Sources.Length];
@@ -197,11 +197,11 @@ namespace TFSConnection.NUnitCommon
                     testdata[i] = enumerators[i].Current;
                 ParameterSet testCase = new ParameterSet();
                 testCase.Arguments = testdata;
-                testCases.Add(testCase);
+                //testCases.Add(testCase);
+                testCases.Add(NUnit.Core.Builders.NUnitTestCaseBuilder.BuildSingleTestMethod(method, null, testCase).TestName.FullName);
                 index = Sources.Length;
                 while (--index >= 0 && !enumerators[index].MoveNext()) ;
                 if (index < 0) break;
-                testCases.Add(NUnit.Core.Builders.NUnitTestCaseBuilder.BuildSingleTestMethod(method, null, testCase).TestName.FullName);
             }
             return testCases;
         }
@@ -222,6 +222,20 @@ namespace TFSConnection.NUnitCommon
         public bool HasTestCaseAttributeFor(MethodInfo method)
         {
             return ParamProvider.HasTestCasesFor(method);
+        }
+
+        public bool HasValueAttributeFor(MethodInfo method)
+        {
+            ParameterInfo[] parameters = method.GetParameters();
+            ArrayList testCases = new ArrayList();
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                if (Reflect.HasAttribute(parameters[i], "NUnit.Framework.ValuesAttribute", false))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         /// <summary>
