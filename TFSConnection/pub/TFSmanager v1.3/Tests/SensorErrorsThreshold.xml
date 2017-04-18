@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ArrayOfSensorErrorsThreshold xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SensorErrorsThreshold>
+    <SensorName>Accelerometer</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.2</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.05</X>
+      <Y>0.05</Y>
+      <Z>0.05</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>SecondAccelerometer</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.2</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.05</X>
+      <Y>0.05</Y>
+      <Z>0.05</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>PhysicalAccelerometer</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.2</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.05</X>
+      <Y>0.05</Y>
+      <Z>0.05</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>PhysicalSecondAccelerometer</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.1</X>
+      <Y>0.1</Y>
+      <Z>0.1</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.2</X>
+      <Y>0.2</Y>
+      <Z>0.2</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>0.05</X>
+      <Y>0.05</Y>
+      <Z>0.05</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>Gyroscope</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>50.0</X>
+      <Y>50.0</Y>
+      <Z>50.0</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>20.0</X>
+      <Y>20.0</Y>
+      <Z>20.0</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>UncalibGyroscope</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>50.0</X>
+      <Y>50.0</Y>
+      <Z>50.0</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>20.0</X>
+      <Y>20.0</Y>
+      <Z>20.0</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>DeviceMovement</SensorName>
+    <PositionErrorThreshold xsi:type="BooleanError">
+      <IsError>0.1</IsError>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="BooleanError">
+      <IsError>0.1</IsError>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="BooleanError">
+      <IsError>1</IsError>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="BooleanError">
+      <IsError>0.1</IsError>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>Inclinometer</SensorName>
+    <PositionErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>Orientation</SensorName>
+    <PositionErrorThreshold xsi:type="OrientationError">
+      <MatrixAngle>10</MatrixAngle>
+      <QuaternionAngle>10</QuaternionAngle>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="OrientationError">
+      <MatrixAngle>10</MatrixAngle>
+      <QuaternionAngle>10</QuaternionAngle>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="OrientationError">
+      <MatrixAngle>10</MatrixAngle>
+      <QuaternionAngle>10</QuaternionAngle>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="OrientationError">
+      <MatrixAngle>10</MatrixAngle>
+      <QuaternionAngle>10</QuaternionAngle>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>OrientationAm</SensorName>
+    <PositionErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="AngleError">
+      <Angle>10</Angle>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>Compass</SensorName>
+    <PositionErrorThreshold xsi:type="CompassError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+      <Heading>5</Heading>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="CompassError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+      <Heading>5</Heading>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="CompassError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+      <Heading>10</Heading>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="CompassError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+      <Heading>5</Heading>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>Magnetometer</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>60.0</X>
+      <Y>60.0</Y>
+      <Z>60.0</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>20.0</X>
+      <Y>20.0</Y>
+      <Z>20.0</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>UncalibMagnetometer</SensorName>
+    <PositionErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="ThreeAxisError">
+      <X>10.0</X>
+      <Y>10.0</Y>
+      <Z>10.0</Z>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="ThreeAxisError">
+      <X>60.0</X>
+      <Y>60.0</Y>
+      <Z>60.0</Z>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="ThreeAxisError">
+      <X>20.0</X>
+      <Y>20.0</Y>
+      <Z>20.0</Z>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>SimpleDeviceOrientation</SensorName>
+    <PositionErrorThreshold xsi:type="BooleanError">
+      <IsError>0</IsError>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="BooleanError">
+      <IsError>0</IsError>
+    </AverageErrorThreshold>
+  </SensorErrorsThreshold>
+
+  <SensorErrorsThreshold>
+    <SensorName>Hinge</SensorName>
+    <PositionErrorThreshold xsi:type="HingeError">
+      <HingeAngle>5</HingeAngle>
+      <ScreenAngle>5</ScreenAngle>
+      <KeyboardAngle>5</KeyboardAngle>
+    </PositionErrorThreshold>
+    <AverageErrorThreshold xsi:type="HingeError">
+      <HingeAngle>5</HingeAngle>
+      <ScreenAngle>5</ScreenAngle>
+      <KeyboardAngle>5</KeyboardAngle>
+    </AverageErrorThreshold>
+    <MaxErrorThreshold xsi:type="HingeError">
+      <HingeAngle>5</HingeAngle>
+      <ScreenAngle>5</ScreenAngle>
+      <KeyboardAngle>5</KeyboardAngle>
+    </MaxErrorThreshold>
+    <StdDevErrorThreshold xsi:type="HingeError">
+      <HingeAngle>5</HingeAngle>
+      <ScreenAngle>5</ScreenAngle>
+      <KeyboardAngle>5</KeyboardAngle>
+    </StdDevErrorThreshold>
+  </SensorErrorsThreshold>
+
+</ArrayOfSensorErrorsThreshold>

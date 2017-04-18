@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sensors_def>
+  <custom_sensors>
+    <!--ISH Internal-->
+    <sensor name="ISH Itself" id="0x01" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="VThread Stub" id="0x02"  osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="HID Itself" id="0x03" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Loop buffer" id="0x04" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="VThread ABS" id="0x05" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="GS Port" id="0x06" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="CS Port" id="0x07" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Bist" id="0x08" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Dummy Algo" id="0x09" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Phy All" id="0x0A" osType="Windows">
+      <fields/>
+    </sensor>
+
+
+    <!--Biometric-->
+    <sensor name="Presence" id="0x11" osType="Windows">
+      <fields>
+        <field friendly_name="Timestamp received" field_raw_name="TIMESTAMP" />
+        <field friendly_name="Human Presence" field_raw_name="HUMAN_PRESENCE" units="binary" />
+      </fields>
+    </sensor>
+
+    <sensor name="Proximity" id="0x12" osType="Windows">
+      <fields>
+        <field friendly_name="Timestamp received" field_raw_name="TIMESTAMP"  />
+        <field friendly_name="Human Presence" field_raw_name="HUMAN_PRESENCE" units="binary" />
+      </fields>
+    </sensor>
+    <sensor name="Touch" id="0x13" osType="Windows">
+      <fields />
+    </sensor>
+
+    <!--Electrical-->
+    <sensor name="Capacitance" id="0x21" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Current" id="0x22" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Power" id="0x23" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Inductance" id="0x24" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Resistance" id="0x25" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Voltage" id="0x26" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Potentiometer" id="0x27" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Frequency" id="0x28" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Period" id="0x29" osType="Windows">
+      <fields/>
+    </sensor>
+    
+    <!--Environmental-->
+    <sensor name="Atmospheric Pressure" id="0x31" osType="Windows">
+      <fields>
+        <field friendly_name="Pressure" field_raw_name="ATMOSPHERIC_PRESSURE_BAR" units="Bar" />
+      </fields>
+    </sensor>
+    <sensor name="Humidity" id="0x32" osType="Windows">
+      <fields>
+        <field friendly_name="Humidity" field_raw_name="HUMIDITY_PERCENT" units="percentage" />
+      </fields>
+    </sensor>
+    <sensor name="Temperature" id="0x33" osType="Windows">
+      <fields>
+        <field friendly_name="Temperature" field_raw_name="TEMPERATURE_CELSIUS" units="celsius" />
+      </fields>
+    </sensor>
+    <sensor name="Wind Direction" id="0x34" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Wind Speed" id="0x35" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Light-->
+    <sensor name="ALS" id="0x41" osType="Windows">
+      <fields>
+        <field friendly_name="Level" field_raw_name="LIGHT_LEVEL_LUX" units="lux" />
+      </fields>
+    </sensor>
+ 
+    <sensor name="Consumer Infrared" id="0x42" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="UV" id="0x43" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Location-->
+    <sensor name="Broadcast" id="0x51" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Dead Reckoning" id="0x52" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="GPS" id="0x53" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Lookup" id="0x54" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Location Other" id="0x55" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Static" id="0x56" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Triangulation" id="0x57" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Mechanical-->
+    <sensor name="Boolean Switch" id="0x61" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Boolean Switch Array" id="0x62" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Multivalue Switch" id="0x63" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Force" id="0x64" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Mech Pressure" id="0x65" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Strain" id="0x66" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Scale Weight" id="0x67" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Vibrator" id="0x68" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Hall Efect Switch" id="0x69" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Motion-->
+    <sensor name="Physical Accel 1D" id="0x71" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Physical Accel 2D" id="0x72" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="g0" />
+        <field friendly_name="Y" field_raw_name="Value2" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Physical Accel" id="0x73" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="g0" />
+        <field friendly_name="Y" field_raw_name="Value2" units="g0" />
+        <field friendly_name="Z" field_raw_name="Value3" units="g0" />
+        <field friendly_name="X" field_raw_name="ACCELERATION_X_G" units="g0" />
+        <field friendly_name="Y" field_raw_name="ACCELERATION_Y_G" units="g0" />
+        <field friendly_name="Z" field_raw_name="ACCELERATION_Z_G" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Physical Gyro 1D" id="0x74" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Physical Gyro 2D" id="0x75" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Physical Gyro" id="0x76" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="ANGULAR_VELOCITY_X" units="deg/sec" />
+        <field friendly_name="Y" field_raw_name="ANGULAR_VELOCITY_Y" units="deg/sec" />
+        <field friendly_name="Z" field_raw_name="ANGULAR_VELOCITY_Z" units="deg/sec" />
+        <field friendly_name="X" field_raw_name="ANGULAR_VELOCITY_X_DEGREES_PER_SECOND" units="deg/sec" />
+        <field friendly_name="Y" field_raw_name="ANGULAR_VELOCITY_Y_DEGREES_PER_SECOND" units="deg/sec" />
+        <field friendly_name="Z" field_raw_name="ANGULAR_VELOCITY_Z_DEGREES_PER_SECOND" units="deg/sec" />
+      </fields>
+    </sensor>
+    <sensor name="Motion Detector" id="0x77" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Speedometer" id="0x78" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Accelerometer" id="0x79" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="g0" />
+        <field friendly_name="Y" field_raw_name="Value2" units="g0" />
+        <field friendly_name="Z" field_raw_name="Value3" units="g0" />
+        <field friendly_name="X" field_raw_name="ACCELERATION_X_G" units="g0" />
+        <field friendly_name="Y" field_raw_name="ACCELERATION_Y_G" units="g0" />
+        <field friendly_name="Z" field_raw_name="ACCELERATION_Z_G" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Gyrometer" id="0x7A" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="ANGULAR_VELOCITY_X" units="deg/sec" />
+        <field friendly_name="Y" field_raw_name="ANGULAR_VELOCITY_Y" units="deg/sec" />
+        <field friendly_name="Z" field_raw_name="ANGULAR_VELOCITY_Z" units="deg/sec" />
+        <field friendly_name="X" field_raw_name="ANGULAR_VELOCITY_X_DEGREES_PER_SECOND" units="deg/sec" />
+        <field friendly_name="Y" field_raw_name="ANGULAR_VELOCITY_Y_DEGREES_PER_SECOND" units="deg/sec" />
+        <field friendly_name="Z" field_raw_name="ANGULAR_VELOCITY_Z_DEGREES_PER_SECOND" units="deg/sec" />
+      </fields>
+    </sensor>
+
+    <!--Orientation-->
+    <sensor name="Compass 1D" id="0x81" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Compass 2D" id="0x82" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Compass 3D" id="0x83" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="MAGNETIC_FIELD_STRENGTH_X_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Y" field_raw_name="MAGNETIC_FIELD_STRENGTH_Y_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Z" field_raw_name="MAGNETIC_FIELD_STRENGTH_Z_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Heading Compensated magnetic north" field_raw_name="MAGNETIC_HEADING_COMPENSATED_MAGNETIC_NORTH_DEGREES" units="degree" />
+      </fields>
+    </sensor>
+    <sensor name="Inclinometer 1D" id="0x84" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Inclinometer 2D" id="0x85" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Inclinometer 3D" id="0x86" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="TILT_X_DEGREES" units="degree" />
+        <field friendly_name="Y" field_raw_name="TILT_Y_DEGREES" units="degree" />
+        <field friendly_name="Z" field_raw_name="TILT_Z_DEGREES" units="degree" />
+      </fields>
+    </sensor>
+    <sensor name="Distance 1D" id="0x87" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Distance 2D" id="0x88" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Distance 3D" id="0x89" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Device Orientation" id="0x8A" osType="Windows">
+      <fields>
+        <field friendly_name="Quaternion" field_raw_name="QUATERNION" />
+        <field friendly_name="Rotation Matrix" field_raw_name="ROTATION_MATRIX" />    
+      </fields>
+    </sensor>
+    <sensor name="Compass" id="0x8B" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Inclinometer" id="0x8C" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="TILT_X_DEGREES" units="degree" />
+        <field friendly_name="Y" field_raw_name="TILT_Y_DEGREES" units="degree" />
+        <field friendly_name="Z" field_raw_name="TILT_Z_DEGREES" units="degree" />
+      </fields>
+    </sensor>
+
+    <sensor name="Distance" id="0x8D" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Scanner-->
+    <sensor name="Barcode" id="0x91" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="RFID" id="0x92" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="NFC" id="0x93" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Time-->
+    <sensor name="Alarm" id="0xA1" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="RTC" id="0xA2" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--OEM Dummy-->
+    <sensor name="Dummy Driver" id="0xC1" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Dummy Algo" id="0xC2" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Dummy Algo2" id="0xC3" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Other-->
+    <sensor name="Other Custom" id="0xE1" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Other Generic" id="0xE2" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Other Generic Enumerator" id="0xE3" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Health Monitor" id="0xE4" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--All-->
+    <sensor name="All Types" id="0x100" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="All Reporters" id="0x101" osType="Windows">
+      <fields/>
+    </sensor>
+
+    <!--Intel Orientation-->
+    <sensor name="Orientation AG" id="0x200" osType="Windows">
+      <fields>
+        <field friendly_name="qX" field_raw_name="Value1"  />
+        <field friendly_name="qY" field_raw_name="Value2"  />
+        <field friendly_name="qZ" field_raw_name="Value3"  />
+        <field friendly_name="qW" field_raw_name="Value4"  />
+      </fields>
+    </sensor>
+    <sensor name="Orientation AM" id="0x201" osType="Windows">
+      <fields>
+        <field friendly_name="mag_err" field_raw_name="Value5" units="radians" />
+        <field friendly_name="qX" field_raw_name="Value1"  />
+        <field friendly_name="qY" field_raw_name="Value2"  />
+        <field friendly_name="qZ" field_raw_name="Value3"  />
+        <field friendly_name="qW" field_raw_name="Value4"  />
+      </fields>
+    </sensor>
+    <sensor name="Linear Acceleration" id="0x202" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="g0" />
+        <field friendly_name="Y" field_raw_name="Value2" units="g0" />
+        <field friendly_name="Z" field_raw_name="Value3" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Rotation Matrix" id="0x203" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Device Movement" id="0x204" osType="Windows">
+      <fields>
+        <field friendly_name="sleep" field_raw_name="Value1"  />
+        <field friendly_name="Deep_Motionless" field_raw_name="Value2"  />
+        <field friendly_name="Motionless" field_raw_name="Value3"  />
+        <field friendly_name="Semi_Stationary" field_raw_name="Value4"  />
+        <field friendly_name="Static_Calibration" field_raw_name="Value5"  />
+        
+      </fields>
+    </sensor>
+    <sensor name="SDO" id="0x205" osType="Windows">
+      <fields >
+        <field friendly_name="SimpleDeviceOrientation" field_raw_name="Value1"  />
+        
+      </fields>
+    </sensor>
+    <!--<sensor name="Calib Acc" id="0x206" osType="Windows">
+		<fields />
+	</sensor>-->
+    <sensor name="Device Context" id="0x206" osType="Windows" >
+      <fields>
+        <field friendly_name="state"  field_raw_name="Value1"/>
+      </fields>
+    </sensor>
+    <sensor name="Calib Gyro" id="0x207" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Calib Magnetometer" id="0x208" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Gravity" id="0x209" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value4" units="g0" />
+        <field friendly_name="Y" field_raw_name="Value5" units="g0" />
+        <field friendly_name="Z" field_raw_name="Value6" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Orientation EKF" id="0x20a" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Orientation Hinge" id="0x20b" osType="Windows">
+      <fields>
+        <field friendly_name="hinge-angle" field_raw_name="Value1" units="deg/sec" />
+        <field friendly_name="screen-angle" field_raw_name="Value2" units="deg/sec" />
+        <field friendly_name="keyboard-angle" field_raw_name="Value3" units="deg/sec" />
+        <field friendly_name="screen-accel-X" field_raw_name="Value4" units="g0" />
+        <field friendly_name="screen-accel-Y" field_raw_name="Value5" units="g0" />
+        <field friendly_name="screen-accel-Z" field_raw_name="Value6" units="g0" />
+        <field friendly_name="keyboard-accel-X" field_raw_name="Value7" units="g0" />
+        <field friendly_name="keyboard-accel-Y" field_raw_name="Value8" units="g0" />
+        <field friendly_name="keyboard-accel-Z" field_raw_name="Value9" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Device Context" id="0x20c" osType="Windows">
+      <fields>
+        <field friendly_name="state" field_raw_name="Value1"  />
+      </fields>
+    </sensor>
+    <sensor name="Physical Mag" id="0x20f" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="milliGauss" />
+        <field friendly_name="Y" field_raw_name="Value2" units="milliGauss" />
+        <field friendly_name="Z" field_raw_name="Value3" units="milliGauss" />
+        <field friendly_name="Accurancy" field_raw_name="Value4"  />
+        <field friendly_name="X" field_raw_name="MAGNETIC_FIELD_STRENGTH_X_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Y" field_raw_name="MAGNETIC_FIELD_STRENGTH_Y_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Z" field_raw_name="MAGNETIC_FIELD_STRENGTH_Z_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Heading Compensated magnetic north" field_raw_name="MAGNETIC_HEADING_COMPENSATED_MAGNETIC_NORTH_DEGREES" units="degree" />     
+        
+      </fields>
+    </sensor>
+
+
+    <!--Intel Gesture-->
+    <sensor name="Gesture Tap" id="0x210" osType="Windows">
+      <fields>
+        <field friendly_name="tap event"  field_raw_name="Value1"/>
+      </fields>
+    </sensor>
+    <sensor name="Gesture Lift" id="0x211" osType="Windows">
+      <fields>
+        <field friendly_name="Lift look"  field_raw_name="Value1"/>
+        <field friendly_name="Lift vertical"  field_raw_name="Value2"/>
+      </fields>
+    </sensor>
+    <sensor name="Gesture PanZoom" id="0x212" osType="Windows">
+      <fields>
+        <field friendly_name="Angle X" units="deg/sec" field_raw_name="Value1"/>
+        <field friendly_name="Angle Y" units="deg/sec" field_raw_name="Value2"/>
+      </fields>
+    </sensor>
+    <sensor name="Gesture Flick" id="0x213" osType="Windows">
+      <fields>
+      </fields>
+    </sensor>
+    <sensor name="Gesture Tilt" id="0x214" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Pick Up Gesture" id="0x215" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="User Defined Gesture" id="0x216" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Ear Touch Gesture" id="0x217" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Lift and look Sensor" id="0x218" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Lift to Vertical" id="0x219" osType="Windows">
+      <fields />
+    </sensor>
+    <!--Intel Activity-->
+    <sensor name="Step Counter" id="0x230" osType="Windows">
+      <fields>
+        <field friendly_name="steps" field_raw_name="Value1"  />
+        <field friendly_name="steps" field_raw_name="{c458f8a7-4ae8-4777-9607-2e9bdd65110a},140"  />
+      </fields>
+    </sensor>
+    <sensor name="PDR" id="0x231" osType="Windows">
+      <fields/>
+    </sensor>
+    <sensor name="Activity Type" id="0x232" osType="Windows">
+      <fields>
+      </fields>
+    </sensor>
+    <sensor name="Shake" id="0x233" osType="Windows">
+      <fields>
+        <field friendly_name="Shakes count" field_raw_name="VALUE1"  />
+      </fields>
+    </sensor>
+    <sensor name="Step Detector" id="0x234" osType="Windows">
+      <fields>
+        <field friendly_name="steps" field_raw_name="Value1"  />
+        <field friendly_name="step_Length" field_raw_name="Value2" units="m" />
+        <field friendly_name="steps_length_accuracy" field_raw_name="Value3" units="m" />
+        <field friendly_name="step_confidence" field_raw_name="Value4"  />
+      </fields>
+    </sensor>
+    <sensor name="User Activity" id="0x235" osType="Windows">
+      <fields>
+        <field friendly_name="Motion"  field_raw_name="Value1"/>
+      </fields>
+    </sensor>
+    <sensor name="Significant Motion" id="0x236" osType="Windows">
+      <fields>
+      </fields>
+    </sensor>
+    <sensor name="Instant Activity" id="0x237" osType="Windows">
+      <fields>
+        <field friendly_name="activity class"  field_raw_name="Value1"/>
+      </fields>
+    </sensor>
+    <sensor name="Energy Expenditure" id="0x238" osType="Windows">
+      <fields />
+    </sensor>
+    <!--Intel Uncalib-->
+    <sensor name="Uncalib Accel" id="0x240" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="g0" />
+        <field friendly_name="Y" field_raw_name="Value2" units="g0" />
+        <field friendly_name="Z" field_raw_name="Value3" units="g0" />
+      </fields>
+    </sensor>
+    <sensor name="Uncalib Gyro" id="0x241" osType="Windows">
+      <fields>
+        <field friendly_name="uncalib_X" field_raw_name="Value1" units="deg/sec" />
+        <field friendly_name="X" field_raw_name="Value2" units="deg/sec" />
+        <field friendly_name="uncalib_Y" field_raw_name="Value3" units="deg/sec" />
+        <field friendly_name="Y" field_raw_name="Value4" units="deg/sec" />
+        <field friendly_name="uncalib_Z" field_raw_name="Value5" units="deg/sec" />
+        <field friendly_name="Z" field_raw_name="Value6" units="deg/sec" />
+      </fields>
+    </sensor>
+    <sensor name="Uncalib Mag" id="0x242" osType="Windows">
+      <fields>
+        <field friendly_name="uncalib_X" field_raw_name="Value1" units="milliGauss" />
+        <field friendly_name="X" field_raw_name="Value2" units="milliGauss" />
+        <field friendly_name="uncalib_Y" field_raw_name="Value3" units="milliGauss" />
+        <field friendly_name="Y" field_raw_name="Value4" units="milliGauss" />
+        <field friendly_name="uncalib_Z" field_raw_name="Value5" units="milliGauss" />
+        <field friendly_name="Z" field_raw_name="Value6" units="milliGauss" />
+      </fields>
+    </sensor>
+    <sensor name="Calib Accel" id="0x24F" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="g0" />
+        <field friendly_name="Y" field_raw_name="Value2" units="g0" />
+        <field friendly_name="Z" field_raw_name="Value3" units="g0" />
+      </fields>
+    </sensor>
+
+    <!--Intel Light-->
+    <sensor name="UV" id="0x250" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="RGB" id="0x251" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Light Gesture" id="0x252" osType="Windows">
+      <fields />
+    </sensor>
+
+    <!--Intel Hall-->
+    <sensor name="Hall presence" id="0x261" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Altitude" id="0x270" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="Heat Index" id="0x274" osType="Windows">
+      <fields />
+    </sensor>
+    <!--DshRaw -->
+    <sensor name="DshRaw Accelerometer" id="0x300" osType="Windows" >
+      <fields>
+        <field friendly_name="X" units="g0" field_raw_name="Value1"/>
+        <field friendly_name="Y" units="g0" field_raw_name="Value2"/>
+        <field friendly_name="Z" units="g0" field_raw_name="Value3"/>
+      </fields>
+    </sensor>
+    <sensor name="DshRaw Gyro" id="301" osType="Windows" >
+      <fields>
+        <field friendly_name="X" units="deg/sec" field_raw_name="Value1"/>
+        <field friendly_name="Y" units="deg/sec" field_raw_name="Value2"/>
+        <field friendly_name="Z" units="deg/sec" field_raw_name="Value3"/>
+      </fields>
+    </sensor>
+    <sensor name="DshRaw Magnometer" id="0x302" osType="Windows" >
+      <fields>
+        <field friendly_name="X" units="milliGauss" field_raw_name="Value1"/>
+        <field friendly_name="Y" units="milliGauss" field_raw_name="Value2"/>
+        <field friendly_name="Z" units="milliGauss" field_raw_name="Value3"/>
+      </fields>
+    </sensor>
+
+    <!--Intel CHUB-->
+    <sensor name="CHUB FFix" id="0x401" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="CHUB Geo Log" id="0x402" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="CHUB Geo Fence" id="0x403" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="CHUB Health" id="0x404" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="CHUB Policy" id="0x405" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="CHUB Algo SA" id="0x406" osType="Windows">
+      <fields />
+    </sensor>
+    <sensor name="CHUB Algo LCSI" id="0x407" osType="Windows">
+      <fields />
+    </sensor>
+
+    <!--Android -->
+    <sensor name="Significant Motion" osType="Android" >
+      <fields>
+        <field friendly_name="X" units="g0" field_raw_name="X"/>
+        <field friendly_name="Y" units="g0" field_raw_name="Y"/>
+        <field friendly_name="Z" units="g0" field_raw_name="Z"/>
+      </fields>
+    </sensor>
+    <sensor name="Game Rotation Vector" osType="Android" >
+      <fields>
+        <field friendly_name="X" units="g0" field_raw_name="X"/>
+        <field friendly_name="Y" units="g0" field_raw_name="Y"/>
+        <field friendly_name="Z" units="g0" field_raw_name="Z"/>
+      </fields>
+    </sensor>
+    <sensor name="Rotation Vector" osType="Android" >
+      <fields>
+        <field friendly_name="X" units="g0" field_raw_name="X"/>
+        <field friendly_name="Y" units="g0" field_raw_name="Y"/>
+        <field friendly_name="Z" units="g0" field_raw_name="Z"/>
+      </fields>
+    </sensor>
+
+      <!--Non custom sensors doesnt have id-->
+    <!-- accelerometer is with other accelerometers with ids
+          humidity and temperature are with environmental sensors with ids-->
+        <sensor name="HumanPresence" osType="Windows">
+      <fields>
+        <field friendly_name="Human Presence" field_raw_name="HUMAN_PRESENCE" units="binary" />
+      </fields>
+    </sensor>
+    <sensor name="Gyro" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="ANGULAR_VELOCITY_X" units="deg/sec" />
+        <field friendly_name="Y" field_raw_name="ANGULAR_VELOCITY_Y" units="deg/sec" />
+        <field friendly_name="Z" field_raw_name="ANGULAR_VELOCITY_Z" units="deg/sec" />
+        <field friendly_name="X" field_raw_name="ANGULAR_VELOCITY_X_DEGREES_PER_SECOND" units="deg/sec" />
+        <field friendly_name="Y" field_raw_name="ANGULAR_VELOCITY_Y_DEGREES_PER_SECOND" units="deg/sec" />
+        <field friendly_name="Z" field_raw_name="ANGULAR_VELOCITY_Z_DEGREES_PER_SECOND" units="deg/sec" />
+      </fields>
+    </sensor>
+
+    <sensor name="Magnometer" osType="Windows">
+      <fields>
+        <field friendly_name="X" field_raw_name="Value1" units="milliGauss" />
+        <field friendly_name="Y" field_raw_name="Value2" units="milliGauss" />
+        <field friendly_name="Z" field_raw_name="Value3" units="milliGauss" />
+        <field friendly_name="Accurancy" field_raw_name="Value4"  />
+        <field friendly_name="X" field_raw_name="MAGNETIC_FIELD_STRENGTH_X_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Y" field_raw_name="MAGNETIC_FIELD_STRENGTH_Y_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Z" field_raw_name="MAGNETIC_FIELD_STRENGTH_Z_MILLIGAUSS" units="milliGauss" />
+        <field friendly_name="Heading Compensated magnetic north" field_raw_name="MAGNETIC_HEADING_COMPENSATED_MAGNETIC_NORTH_DEGREES" units="degree" />
+      </fields>
+    </sensor>
+    <sensor name="Pressure" osType="Windows">
+      <fields>
+        <field friendly_name="Pressure" field_raw_name="ATMOSPHERIC_PRESSURE_BAR" units="Bar" />
+      </fields>
+    </sensor>
+    <sensor name="AmbientLight" osType="Windows">
+      <fields>
+        <field friendly_name="Level" field_raw_name="LIGHT_LEVEL_LUX" units="lux" />
+      </fields>
+    </sensor>
+    <sensor name="DeviceOrientation"  osType="Windows">
+      <fields>
+        <field friendly_name="Quaternion" field_raw_name="QUATERNION"/>
+        <field friendly_name="Rotation Matrix" field_raw_name="ROTATION_MATRIX" />
+      </fields>
+    </sensor>
+    <sensor name="SimpleOrientation" osType="Windows">
+      <fields>
+        <field friendly_name="Simple Orientations" field_raw_name="{1637d8a2-4248-4275-865d-558de84aedfd},18"  />
+      </fields>
+    </sensor>
+    <!-- UV has unkown axises-->
+  </custom_sensors>
+</sensors_def>

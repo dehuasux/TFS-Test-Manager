@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<ArrayOfSignalEnumMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>1111xxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+		<EnumStringValue>S0</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>1011xxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+		<EnumStringValue>S3</EnumStringValue>
+	</SignalEnumMapping>
+		<SignalEnumMapping>
+		<Signal>
+			<SignalString>100xxxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure</EnumType>
+		<EnumStringValue>S4,S5</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>0000xxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+		<EnumStringValue>G3</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>0011x10xxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.DeepSleepState, PowerDataStructure </EnumType>
+		<EnumStringValue>Ds3</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>0000x10xxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.DeepSleepState, PowerDataStructure </EnumType>
+		<EnumStringValue>Ds4_5</EnumStringValue>
+	</SignalEnumMapping>
+	  	<SignalEnumMapping>
+		<Signal>
+			<SignalString>1x11xxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.DeepSleepState, PowerDataStructure </EnumType>
+		<EnumStringValue>Off</EnumStringValue>
+	</SignalEnumMapping>
+		<SignalEnumMapping>
+		<Signal>
+			<SignalString>1001xxxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.DeepSleepState, PowerDataStructure</EnumType>
+		<EnumStringValue>Off</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>0000x00xxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.DeepSleepState, PowerDataStructure </EnumType>
+		<EnumStringValue>Off</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>xxxx1xxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>APSCommon.General.MeState, APSCommon</EnumType>
+		<EnumStringValue>MeOn</EnumStringValue>
+	</SignalEnumMapping>
+		<SignalEnumMapping>
+		<Signal>
+			<SignalString>xxxx0xxxxxxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>APSCommon.General.MeState, APSCommon</EnumType>
+		<EnumStringValue>MeOff</EnumStringValue>
+	</SignalEnumMapping>
+	<SignalEnumMapping>
+		<Signal>
+			<SignalString>xxxxxxxx1xxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.PgState, PowerDataStructure</EnumType>
+		<EnumStringValue>On</EnumStringValue>
+	</SignalEnumMapping>
+		<SignalEnumMapping>
+		<Signal>
+			<SignalString>xxxxxxxx0xxxxxxxxxxxxxxx</SignalString>
+		</Signal>
+		<EnumType>PowerDataStructure.PgState, PowerDataStructure</EnumType>
+		<EnumStringValue>Off</EnumStringValue>
+	</SignalEnumMapping>
+</ArrayOfSignalEnumMapping>

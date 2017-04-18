@@ -1,0 +1,1 @@
+TFSCycleManager.exe areaPath1 areaPath2....... iterationPath

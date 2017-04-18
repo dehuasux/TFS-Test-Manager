@@ -1,0 +1,1 @@
+TFSCycleManager.exe "CentralTestPlan\ISH\BAT" "ISH3\ISH3_KBL\KBL_RS2\Test"

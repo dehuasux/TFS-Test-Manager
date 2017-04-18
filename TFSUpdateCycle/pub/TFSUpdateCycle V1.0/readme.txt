@@ -1,0 +1,1 @@
+TFSUpdateCycle.exe "ISH3\ISH3_KBL\KBL_RS2\Test" "[0] Check_Power_D0i1" "Pass"

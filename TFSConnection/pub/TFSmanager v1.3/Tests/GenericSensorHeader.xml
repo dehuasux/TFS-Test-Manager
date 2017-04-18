@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<SensorTypes>
+  <Units>
+    <UnitSet key="AccUnits" BaseUnit="mg0" BaseWindowsUnit="g0">
+      <Unit mapto="meters__sec2">m/s^2</Unit>
+      <Unit mapto="meters__sec2">m/s²</Unit>
+      <Unit mapto="meters__sec2">meter/s^2</Unit>
+      <Unit mapto="meters__sec2">meter/sec^2</Unit>
+      <Unit mapto="meters__sec2">meter/second^2</Unit>
+      <Unit mapto="meters__sec2">meter_per_second</Unit>
+      <Unit mapto="meters__sec2">meterpersecond</Unit>
+      <Unit mapto="meters__sec2">meter/second^2</Unit>
+      <Unit mapto="meters__sec2">m/(sec^2)</Unit>
+      <Unit mapto="meters__sec2">m/sec^2</Unit>
+      <Unit mapto="meters__sec2">meters__sec2</Unit>
+      <Unit mapto="g0">g0</Unit>
+      <Unit mapto="g0">g</Unit>
+      <Unit mapto="g0">Gravitational acceleration</Unit>
+      <Unit mapto="mg0">mg0</Unit>
+      <Unit mapto="mg0">milig0</Unit>
+      <Unit mapto="mg0">milig</Unit>
+      <Unit mapto="mg0">millig2</Unit>
+    </UnitSet>
+    <UnitSet key="MagUnits" BaseUnit="milliGauss" BaseWindowsUnit="milliGauss">
+      <Unit mapto="tesla">tesla</Unit>
+      <Unit mapto="microTesla">microTesla</Unit>
+      <Unit mapto="microTesla">μT</Unit>
+      <Unit mapto="miliTesla">milliTesla</Unit>
+      <Unit mapto="milliGauss">milliGauss</Unit>
+      <Unit mapto="milliGauss">millig</Unit>
+      <Unit mapto="gauss">gauss</Unit>
+      <Unit mapto="milliGauss">Milli-gauss</Unit>
+      <Unit mapto="milliGauss">milligauss</Unit>
+      <Unit mapto="milliGauss">milliGauss</Unit>
+
+    </UnitSet>
+    <UnitSet key="GyroUnits" BaseUnit="deg__sec" BaseWindowsUnit="deg__sec">
+      <Unit mapto="rad__sec">rad/sec</Unit>
+      <Unit mapto="rad__sec">radian/second</Unit>
+      <Unit mapto="rad__sec">rad/s</Unit>
+      <Unit mapto="rad__sec">rad__sec</Unit>
+      <Unit mapto="deg__sec">degree/sec</Unit>
+      <Unit mapto="deg__sec">degree/second</Unit>
+      <Unit mapto="deg__sec">degree_per_second</Unit>
+      <Unit mapto="deg__sec">degree/s</Unit>
+      <Unit mapto="deg__sec">deg/sec</Unit>
+      <Unit mapto="deg__sec">dps</Unit>
+      <Unit mapto="deg__sec">deg__sec</Unit>
+    </UnitSet>
+    <UnitSet key="ALSUnits" BaseUnit="lux" BaseWindowsUnit="lux">
+      <Unit mapto="lux">lux</Unit>
+    </UnitSet>
+    <UnitSet key="PressureUnits" BaseUnit="mBar" BaseWindowsUnit="Bar">
+      <Unit mapto="pascal">Pa</Unit>
+      <Unit mapto="pascal">Pascal</Unit>
+      <Unit mapto="pascal">pascal</Unit>
+      <Unit mapto="hectopascal">hectopascal</Unit>
+      <Unit mapto="Bar">bar</Unit>
+      <Unit mapto="Bar">Bar</Unit>
+      <Unit mapto="mBar">mb PRESSURE</Unit>
+      <Unit mapto="mBar">mb</Unit>
+      <Unit mapto="mBar">milibar</Unit>
+      <Unit mapto="mBar">mbar</Unit>
+      <Unit mapto="standard_atmosphere">atm</Unit>
+      <Unit mapto="standard_atmosphere">standard_atmosphere</Unit>
+      <Unit mapto="technical_atmosphere">at PRESSURE</Unit>
+      <Unit mapto="technical_atmosphere">technical_atmosphere</Unit>
+      <Unit mapto="torr">Torr</Unit>
+      <Unit mapto="torr">torr</Unit>
+      <Unit mapto="PSI">psi</Unit>
+      <Unit mapto="PSI">PSI</Unit>
+    </UnitSet>
+    <UnitSet key="HumidityUnits" BaseUnit="percentage" BaseWindowsUnit="percentage">
+      <Unit mapto="percentage">percentage</Unit>
+      <Unit mapto="percentage">%</Unit>
+    </UnitSet>
+    <UnitSet key="TemperatureUnits" BaseUnit="celsius" BaseWindowsUnit="celsius">
+      <Unit mapto="celsius">celsius</Unit>
+      <Unit mapto="celsius">c</Unit>
+      <Unit mapto="celsius">°C</Unit>
+      <Unit mapto="fahrenheit">fahrenheit</Unit>
+      <Unit mapto="fahrenheit">f</Unit>
+      <Unit mapto="fahrenheit">°F</Unit>
+      <Unit mapto="kelvin">kelvin</Unit>
+      <Unit mapto="kelvin">k</Unit>
+      <Unit mapto="kelvin">°k</Unit>
+    </UnitSet>
+    <UnitSet key="PositionUnits" BaseUnit="meter" BaseWindowsUnit="meter">
+      <Unit mapto="km">km</Unit>
+      <Unit mapto="meter">meter</Unit>
+      <Unit mapto="meter">meters</Unit>
+      <Unit mapto="meter">m</Unit>
+      <Unit mapto="cm">cm</Unit>
+      <Unit mapto="cm">centimeter</Unit>
+      <Unit mapto="mm">mm</Unit>
+      <Unit mapto="nm">nm</Unit>
+    </UnitSet>
+    <UnitSet key="AngleUnits" BaseUnit="degree" BaseWindowsUnit="degree">
+      <Unit mapto="degree">degree</Unit>
+      <Unit mapto="degree">deg</Unit>
+      <Unit mapto="degree">degrees</Unit>
+      <Unit mapto="radian">radian</Unit>
+    </UnitSet>
+    <UnitSet key="UVUnits" BaseUnit="milliUVI" BaseWindowsUnit="UVI">
+      <Unit mapto="milliUVI">milliUVI</Unit>
+      <Unit mapto="UVI">UVI</Unit>
+    </UnitSet>
+    <UnitSet key="ProximityUnits" BaseUnit="binary" BaseWindowsUnit="binary">
+      <Unit mapto="binary">binary</Unit>
+      <Unit mapto="presence">meter</Unit>
+      <Unit mapto="mm">mm</Unit>
+    </UnitSet>
+    <UnitSet key="HumanPresenceUnits" BaseUnit="presence" BaseWindowsUnit="presence">
+      <Unit mapto="presence">presence</Unit>
+    </UnitSet>
+
+    <UnitSet key="TimeStampUnits" BaseUnit="ms" BaseWindowsUnit="ms">
+      <Unit mapto="hrs">Hours</Unit>
+      <Unit mapto="hrs">hours</Unit>
+      <Unit mapto="sec">Seconds</Unit>
+      <Unit mapto="sec">Second</Unit>
+      <Unit mapto="sec">Sec</Unit>
+      <Unit mapto="sec">sec</Unit>
+      <Unit mapto="ms">millisec</Unit>
+      <Unit mapto="ms">millisecond</Unit>
+      <Unit mapto="ms">msec</Unit>
+      <Unit mapto="ms">ms</Unit>
+      <Unit mapto=""/>
+    </UnitSet>
+    <UnitSet key="RawUnits" BaseUnit="raw" BaseWindowsUnit="raw">
+      <Unit mapto="raw">Raw Data</Unit>
+    </UnitSet>
+  </Units>
+  <Sensors>
+    <Sensor Type="Accelerometer">
+      <PossibleHeaders>
+        <Header>Acc</Header>
+        <Header>Accelerometer</Header>
+        <Header>ACCELEROMETER</Header>
+        <Header>Acceleration</Header>
+        <Header>Physical Accel</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="AccUnits" DPMandatory="true">X</Axis>
+        <Axis unitSet="AccUnits" DPMandatory="true">Y</Axis>
+        <Axis unitSet="AccUnits" DPMandatory="true">Z</Axis>
+        <Axis>MotionState</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Magnetometer">
+      <PossibleHeaders>
+        <Header>Magnetometer</Header>
+        <Header>MAGNETIC FIELD</Header>
+        <Header>Mag</Header>
+        <Header>Magnometer</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="MagUnits" DPMandatory="true">X</Axis>
+        <Axis unitSet="MagUnits" DPMandatory="true">Y</Axis>
+        <Axis unitSet="MagUnits" DPMandatory="true">Z</Axis>
+        <Axis unitSet="AngleUnits">MagneticField</Axis>
+        <Axis unitSet="AngleUnits">Heading</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Gyroscope">
+      <PossibleHeaders>
+        <Header>Gyro</Header>
+        <Header>GYROSCOPE</Header>
+        <Header>Angular Speed</Header>
+        <Header>Gyroscope</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="GyroUnits" DPMandatory="true">X</Axis>
+        <Axis unitSet="GyroUnits" DPMandatory="true">Y</Axis>
+        <Axis unitSet="GyroUnits" DPMandatory="true">Z</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="ALS">
+      <PossibleHeaders>
+        <Header>Luminity</Header>
+        <Header>AmbientLightSensor</Header>
+        <Header>ALS</Header>
+        <Header>LIGHT</Header>
+        <Header>AmbientLight</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="ALSUnits" DPMandatory="true" supportedNames="ALS,Level">ALS</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="HumanPresence">
+      <PossibleHeaders>
+        <Header>HumanPresence</Header>
+        <Header>humanpresence</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="HumanPresenceUnits">Presence</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Pressure">
+      <PossibleHeaders>
+        <Header>Pressure</Header>
+        <Header>Barometer</Header>
+        <Header>ATMOSPHERIC PRESSURE</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="PressureUnits"  DPMandatory="true">Pressure</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Humidity">
+      <PossibleHeaders>
+        <Header>Humidity</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="HumidityUnits" DPMandatory="true">Humidity</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Temperature">
+      <PossibleHeaders>
+        <Header>Temperature</Header>
+        <Header>Thermometer</Header>
+        <Header>temp</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="TemperatureUnits" DPMandatory="true">Temperature</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Position">
+      <PossibleHeaders>
+        <Header>GlobalPosition</Header>
+        <Header>GPS</Header>
+        <Header>Location</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="PositionUnits">X</Axis>
+        <Axis unitSet="PositionUnits">Y</Axis>
+        <Axis unitSet="PositionUnits">Z</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Inclinometer">
+      <PossibleHeaders>
+        <Header>Inclinometer</Header>
+        <Header>inclinometer</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="AngleUnits">X</Axis>
+        <Axis unitSet="AngleUnits">Y</Axis>
+        <Axis unitSet="AngleUnits">Z</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="DeviceOrientation">
+      <PossibleHeaders>
+        <Header>DeviceOrientation</Header>
+        <Header>Orientation</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="AngleUnits">fX</Axis>
+        <Axis unitSet="AngleUnits">fY</Axis>
+        <Axis unitSet="AngleUnits">fZ</Axis>
+        <Axis unitSet="AngleUnits">fW</Axis>
+        <Axis unitSet="AngleUnits">fRM11</Axis>
+        <Axis unitSet="AngleUnits">fRM12</Axis>
+        <Axis unitSet="AngleUnits">fRM13</Axis>
+        <Axis unitSet="AngleUnits">fRM21</Axis>
+        <Axis unitSet="AngleUnits">fRM22</Axis>
+        <Axis unitSet="AngleUnits">fRM23</Axis>
+        <Axis unitSet="AngleUnits">fRM31</Axis>
+        <Axis unitSet="AngleUnits">fRM32</Axis>
+        <Axis unitSet="AngleUnits">fRM33</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="SimpleOrientation">
+      <PossibleHeaders>
+        <Header>SimpleOrientation</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="RawUnits">SimpleOrientation</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="UV">
+      <PossibleHeaders>
+        <Header>UV</Header>
+        <Header>uv</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="UVUnits" DPMandatory="true">UV</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Proximity">
+      <PossibleHeaders>
+        <Header>Proximity</Header>
+        <Header>Human Presence</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="ProximityUnits" DPMandatory="true" supportedNames="Presence,Proximity">Proximity</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="Compass">
+      <PossibleHeaders>
+        <Header>Compass2D</Header>
+        <Header>Compass</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="AngleUnits">Compass</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="TimeStamp">
+      <PossibleHeaders>
+        <Header>TimeStamp</Header>
+        <Header>Timestamp</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="TimeStampUnits"/>
+        <Axis>Received</Axis>
+        <Axis>System</Axis>
+      </PossibleAxes>
+    </Sensor>
+    <Sensor Type="GenericSensor">
+      <PossibleHeaders>
+        <Header>Generic Sensor</Header>
+      </PossibleHeaders>
+      <PossibleAxes>
+        <Axis unitSet="RawUnits" DPMandatory="true"/>
+      </PossibleAxes>
+    </Sensor>
+
+
+  </Sensors>
+</SensorTypes>

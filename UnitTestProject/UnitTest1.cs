@@ -4,9 +4,8 @@ using System.Linq;
 using System.Reflection;
 using System.Collections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TFSConnection.TFSCommon;
 using TFSConnection.NUnitCommon;
-
+using TFSConnection.TFSCommon;
 
 namespace TFSTestManagerTests
 {

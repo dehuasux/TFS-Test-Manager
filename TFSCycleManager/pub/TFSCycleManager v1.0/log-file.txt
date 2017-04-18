@@ -1,0 +1,77 @@
+Collecton: tfs-alm.intel.com\SOC_FW
+*********************************
+Area Path[0]:CentralTestPlan\ISH\BAT
+Iteration Path:ISH3\ISH3_KBL\KBL_RS2\Test
+[WorkItemType]	[ID]	[Title]
+---------------------------------
+Test excutiion	[2038924]	[[0] Check_Power_D0i1]	has been created finished!
+Test excutiion	[2038925]	[[0] Check_Power_D0i3]	has been created finished!
+Test excutiion	[2038926]	[[0] ChangeReportIntervalAccelerometer]	has been created finished!
+Test excutiion	[2038927]	[[0] ChangeReportIntervalAmbientLight]	has been created finished!
+Test excutiion	[2038928]	[[0] ChangeReportIntervalBarometer]	has been created finished!
+Test excutiion	[2038929]	[[0] ChangeReportIntervalDeviceOrientation]	has been created finished!
+Test excutiion	[2038930]	[[0] ChangeReportIntervalGyrometer]	has been created finished!
+Test excutiion	[2038931]	[[0] ChangeReportIntervalInclinometer]	has been created finished!
+Test excutiion	[2038932]	[[0] ChangeReportIntervalMagnetometer]	has been created finished!
+Test excutiion	[2038933]	[[0] ChangeSensitivityStillAccelerometer]	has been created finished!
+Test excutiion	[2038934]	[[0] ChangeSensitivityStillALS]	has been created finished!
+Test excutiion	[2038935]	[[0] ChangeSensitivityStillBarometer]	has been created finished!
+Test excutiion	[2038936]	[[0] ChangeSensitivityStillGyrometer]	has been created finished!
+Test excutiion	[2038937]	[[0] ChangeSensitivityStillInclinometer]	has been created finished!
+Test excutiion	[2038938]	[[0] ChangeSensitivityStillMagnetomater]	has been created finished!
+Test excutiion	[2038939]	[[0] PartialAccuracyAccelerometer]	has been created finished!
+Test excutiion	[2038940]	[[0] PartialAccuracyALS]	has been created finished!
+Test excutiion	[2038941]	[[0] PartialAccuracyBarometer]	has been created finished!
+Test excutiion	[2038942]	[[0] CheckAlivenessAccelerometer]	has been created finished!
+Test excutiion	[2038943]	[[0] DisableEnableHECI]	has been created finished!
+Test excutiion	[2038944]	[[0] DisableEnableBUS]	has been created finished!
+Test excutiion	[2038945]	[[0] DisableEnableHIDs]	has been created finished!
+Test excutiion	[2038946]	[[0] DisableEnableHECILoop]	has been created finished!
+Test excutiion	[2038947]	[[0] DisableEnableBUSLoop]	has been created finished!
+Test excutiion	[2038948]	[[0] DisableEnableHIDsLoop]	has been created finished!
+Test excutiion	[2038949]	[[0] ResetLoop]	has been created finished!
+Test excutiion	[2038950]	[[0] ColdResetLoop]	has been created finished!
+Test excutiion	[2038951]	[[0] S5 Loop]	has been created finished!
+Test excutiion	[2038952]	[[0] S4 Loop]	has been created finished!
+Test excutiion	[2038953]	[[0] S3 Loop]	has been created finished!
+Test excutiion	[2038954]	[[0] CheckHECIVersion]	has been created finished!
+Test excutiion	[2038955]	[[0] Write Read Data Via HECI Client SMHI]	has been created finished!
+Test excutiion	[2038956]	[[0] CheckBUSVersion]	has been created finished!
+Test excutiion	[2038957]	[[0] CheckMiniportVersion]	has been created finished!
+Test excutiion	[2038958]	[[0] CheckUmdfVersion]	has been created finished!
+Test excutiion	[2038959]	[[0] ChangeSensitivityStillDeviceOrientation]	has been created finished!
+Test excutiion	[2038960]	[[0] CheckFWVersion]	has been created finished!
+Test excutiion	[2038961]	[[0] CheckAlivenessAmbientLight]	has been created finished!
+Test excutiion	[2038962]	[[0] CheckAlivenessCompass]	has been created finished!
+Test excutiion	[2038963]	[[0] CheckAlivenessDeadReckoning]	has been created finished!
+Test excutiion	[2038964]	[[0] CheckAlivenessDeviceMovement]	has been created finished!
+Test excutiion	[2038965]	[[0] CheckAlivenessFlickGesture]	has been created finished!
+Test excutiion	[2038966]	[[0] CheckAlivenessGravity]	has been created finished!
+Test excutiion	[2038967]	[[0] CheckAlivenessGyroscope]	has been created finished!
+Test excutiion	[2038968]	[[0] CheckAlivenessHinge]	has been created finished!
+Test excutiion	[2038969]	[[0] CheckAlivenessInclinometer]	has been created finished!
+Test excutiion	[2038970]	[[0] CheckAlivenessInstantActivity]	has been created finished!
+Test excutiion	[2038971]	[[0] CheckAlivenessLiftGesture]	has been created finished!
+Test excutiion	[2038972]	[[0] CheckAlivenessLinearAcceleration]	has been created finished!
+Test excutiion	[2038973]	[[0] CheckAlivenessMagnetometer]	has been created finished!
+Test excutiion	[2038974]	[[0] CheckAlivenessOrientation]	has been created finished!
+Test excutiion	[2038975]	[[0] CheckAlivenessOrientationAg]	has been created finished!
+Test excutiion	[2038976]	[[0] CheckAlivenessOrientationAm]	has been created finished!
+Test excutiion	[2038977]	[[0] CheckAlivenessPanZoomGesture]	has been created finished!
+Test excutiion	[2038978]	[[0] CheckAlivenessPhysicalAccelerometer]	has been created finished!
+Test excutiion	[2038979]	[[0] CheckAlivenessPhysicalActivity]	has been created finished!
+Test excutiion	[2038980]	[[0] CheckAlivenessPhysicalSecondAccelerometer]	has been created finished!
+Test excutiion	[2038981]	[[0] CheckAlivenessPressure]	has been created finished!
+Test excutiion	[2038982]	[[0] CheckAlivenessShake]	has been created finished!
+Test excutiion	[2038983]	[[0] CheckAlivenessSignificantMotion]	has been created finished!
+Test excutiion	[2038984]	[[0] CheckAlivenessSimpleOrientation]	has been created finished!
+Test excutiion	[2038985]	[[0] CheckAlivenessStepCounter]	has been created finished!
+Test excutiion	[2038986]	[[0] CheckAlivenessStepDetector]	has been created finished!
+Test excutiion	[2038987]	[[0] CheckAlivenessTapGesture]	has been created finished!
+Test excutiion	[2038988]	[[0] CheckAlivenessTiltGesture]	has been created finished!
+Test excutiion	[2038989]	[[0] CheckAlivenessUncalibGyroscope]	has been created finished!
+Test excutiion	[2038990]	[[0] CheckAlivenessUncalibMagnetometer]	has been created finished!
+Test excutiion	[2038991]	[[0] CheckBringup]	has been created finished!
+Test excutiion	[2038992]	[[0] CheckScreenRotation]	has been created finished!
+Test excutiion	[2038993]	[[0] CheckAlivenessAllSensors]	has been created finished!
+Test excutiion	[2038994]	[[0] CheckAlivenessLiftAndLook]	has been created finished!

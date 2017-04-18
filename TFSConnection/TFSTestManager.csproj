@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>C:\code\Publish\TFS Manager\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -26,6 +26,7 @@
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -91,62 +92,80 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>28AA87DF0372D4C31965B3D44B995135E1ED295A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TFSTestManager_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>bin\Debug\log4net.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.TeamFoundation.Client">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\hgzeyfhi.di5\Microsoft.TeamFoundation.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.TeamFoundation.Common">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\hgzeyfhi.di5\Microsoft.TeamFoundation.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.TeamFoundation.TestManagement.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\hgzeyfhi.di5\Microsoft.TeamFoundation.TestManagement.Client.dll</HintPath>
+      <HintPath>lib\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.TeamFoundation.TestManagement.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+    <Reference Include="Microsoft.TeamFoundation.Client, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\PrivateAssemblies\Microsoft.TeamFoundation.TestManagement.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\TestAgent\Microsoft.TeamFoundation.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\hgzeyfhi.di5\Microsoft.TeamFoundation.WorkItemTracking.Client.dll</HintPath>
+    <Reference Include="Microsoft.TeamFoundation.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\TestAgent\Microsoft.TeamFoundation.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.VisualStudio.TeamFoundation">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\hgzeyfhi.di5\Microsoft.VisualStudio.TeamFoundation.dll</HintPath>
+    <Reference Include="Microsoft.TeamFoundation.TestManagement.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.TeamFoundation.TestManagement.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\TestAgent\Microsoft.TeamFoundation.WorkItemTracking.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\qdpb3til.fb2\Microsoft.TeamFoundation.WorkItemTracking.Client.QueryLanguage.dll</HintPath>
     </Reference>
     <Reference Include="NSubstitute">
       <HintPath>..\..\..\..\..\Users\dehuasux\Downloads\NUnit-2.6.3\NUnit-2.6.3\bin\lib\NSubstitute.dll</HintPath>
     </Reference>
     <Reference Include="nunit-console-runner">
-      <HintPath>bin\Debug\nunit-console-runner.dll</HintPath>
+      <HintPath>lib\nunit-console-runner.dll</HintPath>
     </Reference>
     <Reference Include="nunit-gui-runner">
-      <HintPath>bin\Debug\nunit-gui-runner.dll</HintPath>
+      <HintPath>lib\nunit-gui-runner.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.core">
-      <HintPath>bin\Debug\nunit.core.dll</HintPath>
+    <Reference Include="nunit.core, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nunit.core.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.core.interfaces">
-      <HintPath>bin\Debug\nunit.core.interfaces.dll</HintPath>
+    <Reference Include="nunit.core.interfaces, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nunit.core.interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>bin\Debug\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="nunit.mocks">
-      <HintPath>bin\Debug\nunit.mocks.dll</HintPath>
+      <HintPath>lib\nunit.mocks.dll</HintPath>
     </Reference>
     <Reference Include="nunit.uiexception">
-      <HintPath>bin\Debug\nunit.uiexception.dll</HintPath>
+      <HintPath>lib\nunit.uiexception.dll</HintPath>
     </Reference>
     <Reference Include="nunit.uikit">
-      <HintPath>bin\Debug\nunit.uikit.dll</HintPath>
+      <HintPath>lib\nunit.uikit.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.util">
-      <HintPath>bin\Debug\nunit.util.dll</HintPath>
-    </Reference>
-    <Reference Include="pnunit.framework">
-      <HintPath>bin\Debug\pnunit.framework.dll</HintPath>
+    <Reference Include="nunit.util, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nunit.util.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -169,12 +188,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="TFSCommon\TFSOperate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TFSTestManager_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -193,6 +223,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

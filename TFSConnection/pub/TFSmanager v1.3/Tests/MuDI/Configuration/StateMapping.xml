@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StateMapping>
+	<Platform Version="ME8" Type="Desktop">
+		<States>
+			<StateType Name="SystemState" Mask="111101100">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4,S5"
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="DS4_5"
+				   	   Mask="111101100"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101100"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME8" Type="ServerWorkstation">
+		<States>
+			<StateType Name="SystemState" Mask="111101100">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4,S5"
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="DS4_5"
+					   Mask="111101100"
+					   Value="000000100"/>
+				<State Name="G3" 
+					   Mask="111101100"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME8" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111101100">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS3"
+					   Mask="111101100"
+					   Value="000001100"/>
+				<State Name="DS4_5"
+					   Mask="111101100"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101100"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME9" Type="Desktop">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4,S5"
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME9" Type="ServerWorkstation">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME9" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME9_5" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS4"
+					   Mask="111101000"
+					   Value="000101000"/>
+				<State Name="DS5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME10" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS3"
+					   Mask="111101000"
+					   Value="001101000"/>
+				<State Name="DS4"
+					   Mask="111101000"
+					   Value="000101000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME11" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS3"
+					   Mask="111101000"
+					   Value="001101000"/>
+				<State Name="DS4"
+					   Mask="111101000"
+					   Value="000101000"/>
+				<State Name="DS5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME11" Type="Desktop">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4,S5"
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="PgState" Mask="000000001">
+				<State Name="On"
+					   Mask="000000001"
+					   Value="000000001"/>
+				<State Name="Off"
+					   Mask="000000001"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ME11" Type="ServerWorkstation">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="KabyLake" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS3"
+					   Mask="111101000"
+					   Value="001101000"/>
+				<State Name="DS4"
+					   Mask="111101000"
+					   Value="000101000"/>
+				<State Name="DS5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="PgState" Mask="000000001">
+				<State Name="On"
+					   Mask="000000001"
+					   Value="000000001"/>
+				<State Name="Off"
+					   Mask="000000001"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="KabyLake" Type="Desktop">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4,S5"
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="PgState" Mask="000000001">
+				<State Name="On"
+					   Mask="000000001"
+					   Value="000000001"/>
+				<State Name="Off"
+					   Mask="000000001"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="KabyLake" Type="ServerWorkstation">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="CanonLake" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS3"
+					   Mask="111101000"
+					   Value="001101000"/>
+				<State Name="DS4"
+					   Mask="111101000"
+					   Value="000101000"/>
+				<State Name="DS5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="PgState" Mask="000000001">
+				<State Name="On"
+					   Mask="000000001"
+					   Value="000000001"/>
+				<State Name="Off"
+					   Mask="000000001"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="CanonLake" Type="Desktop">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4,S5"
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="PgState" Mask="000000001">
+				<State Name="On"
+					   Mask="000000001"
+					   Value="000000001"/>
+				<State Name="Off"
+					   Mask="000000001"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="CanonLake" Type="ServerWorkstation">
+		<States>
+			<StateType Name="SystemState" Mask="111101000">
+				<State Name="S0" 
+					   Mask="111100000"
+					   Value="111100000"/>
+				<State Name="S3" 
+					   Mask="111100000"
+					   Value="101100000"/>
+				<State Name="S4" 
+					   Mask="111100000"
+					   Value="100100000"/>
+				<State Name="S5" 
+					   Mask="111100000"
+					   Value="100000000"/>
+				<State Name="DS4_5"
+					   Mask="111101000"
+					   Value="000001000"/>
+				<State Name="G3" 
+					   Mask="111101000"
+					   Value="000000000"/>
+			</StateType>
+			<StateType Name="MeState" Mask="000010000">
+				<State Name="MeOn"
+					   Mask="000010000"
+					   Value="000010000"/>
+				<State Name="MeOff"
+					   Mask="000010000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="BayTrail" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111000000">
+				<State Name="S0" 
+					   Mask="111000000"
+					   Value="111000000"/>
+				<State Name="S3" 
+					   Mask="111000000"
+					   Value="101000000"/>
+				<State Name="S4,S5"
+					   Mask="111000000"
+					   Value="100000000"/>
+				<State Name="G3" 
+					   Mask="111000000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="BayTrail" Type="Tablet">
+		<States>
+			<StateType Name="SystemState" Mask="101000010">
+				<State Name="S0" 
+					   Mask="101000010"
+					   Value="101000010"/>
+				<State Name="S0I3"
+					   Mask="101000010"
+					   Value="101000000"/>
+				<State Name="S4,S5"
+					   Mask="101000010"
+					   Value="100000000"/>
+				<State Name="G3" 
+					   Mask="101000010"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="BayTrail" Type="Desktop">
+		<States>
+			<StateType Name="SystemState" Mask="111000000">
+				<State Name="S0" 
+					   Mask="111000000"
+					   Value="111000000"/>
+				<State Name="S3" 
+					   Mask="111000000"
+					   Value="101000000"/>
+				<State Name="S4,S5"
+					   Mask="111000000"
+					   Value="100000000"/>
+				<State Name="G3" 
+					   Mask="111000000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="CherryTrail" Type="Tablet">
+		<States>
+			<StateType Name="SystemState" Mask="101000010">
+				<State Name="S0" 
+					   Mask="101000010"
+					   Value="111000010"/>
+				<State Name="S0I3"
+					   Mask="101000010"
+					   Value="101000000"/>
+				<State Name="S4,S5"
+					   Mask="101000010"
+					   Value="100000000"/>
+				<State Name="G3" 
+					   Mask="101000010"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="Braswell" Type="None">
+		<States>
+			<StateType Name="SystemState" Mask="111000000">
+				<State Name="S0" 
+					   Mask="111000000"
+					   Value="111000000"/>
+				<State Name="S3" 
+					   Mask="111000000"
+					   Value="101000000"/>
+				<State Name="S4,S5"
+					   Mask="111000000"
+					   Value="100000000"/>
+				<State Name="G3" 
+					   Mask="111000000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ApolloLake" Type="Mobile">
+		<States>
+			<StateType Name="SystemState" Mask="111000000">
+				<State Name="S0" 
+					   Mask="111000000"
+					   Value="111000000"/>
+				<State Name="S3" 
+					   Mask="111000000"
+					   Value="101000000"/>
+				<State Name="S4,S5"
+					   Mask="111000000"
+					   Value="100000000"/>
+				<State Name="G3" 
+					   Mask="111000000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+	<Platform Version="ApolloLake" Type="Desktop">
+		<States>
+			<StateType Name="SystemState" Mask="111000000">
+				<State Name="S0" 
+					   Mask="111000000"
+					   Value="111000000"/>
+				<State Name="S3" 
+					   Mask="111000000"
+					   Value="101000000"/>
+				<State Name="S4,S5"
+					   Mask="111000000"
+					   Value="100000000"/>
+				<State Name="G3" 
+					   Mask="111000000"
+					   Value="000000000"/>
+			</StateType>
+		</States>
+	</Platform>
+</StateMapping>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ItemsRelay xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ItemRelay Name="Ac">
+    <Relay>Ac</Relay>
+    <Index>0</Index>
+  </ItemRelay>
+  <ItemRelay Name="Dc">
+    <Relay>Dc</Relay>
+    <Index>1</Index>
+  </ItemRelay>
+  <ItemRelay Name="Pwr">
+    <Relay>Pwr</Relay>
+    <Index>3</Index>
+  </ItemRelay>
+  <ItemRelay Name="Rst">
+    <Relay>Rst</Relay>
+    <Index>4</Index>
+  </ItemRelay>
+  <ItemRelay Name="Cmos">
+    <Relay>Cmos</Relay>
+    <Index>5</Index>
+  </ItemRelay>
+  <ItemRelay Name="M">
+    <Relay>Ex1</Relay>
+    <Index>6</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex2">
+    <Relay>Ex2</Relay>
+    <Index>7</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex3">
+    <Relay>Ex3</Relay>
+    <Index>8</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex4">
+    <Relay>Ex4</Relay>
+    <Index>9</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex5">
+    <Relay>Ex5</Relay>
+    <Index>10</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex6">
+    <Relay>Ex6</Relay>
+    <Index>11</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex7">
+    <Relay>Ex7</Relay>
+    <Index>12</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex8">
+    <Relay>Ex8</Relay>
+    <Index>13</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex9">
+    <Relay>Ex9</Relay>
+    <Index>14</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex10">
+    <Relay>Ex10</Relay>
+    <Index>15</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex11">
+    <Relay>Ex11</Relay>
+    <Index>16</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex12">
+    <Relay>Ex12</Relay>
+    <Index>17</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex13">
+    <Relay>Ex13</Relay>
+    <Index>18</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex14">
+    <Relay>Ex14</Relay>
+    <Index>19</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex15">
+    <Relay>Ex15</Relay>
+    <Index>20</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex16">
+    <Relay>Ex16</Relay>
+    <Index>21</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex17">
+    <Relay>Ex17</Relay>
+    <Index>22</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex18">
+    <Relay>Ex18</Relay>
+    <Index>23</Index>
+  </ItemRelay>
+  <ItemRelay Name="Ex19">
+    <Relay>Ex19</Relay>
+    <Index>24</Index>
+  </ItemRelay>
+</ItemsRelay>

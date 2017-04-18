@@ -1,0 +1,37 @@
+Connecting to Team Foundation Server https://tfs-alm.intel.com:8088/tfs/...
+PATH[[0]:CentralTestPlan\ISH\Sensor Core
+************************************
+PASS: no errors.
+
+------------------------------------
+PATH[[1]:CentralTestPlan\ISH\Linux(Ubuntu)\BAT
+************************************
+ID: 1034310
+Title: Check Sensors aliveness accel_3d (index_1)
+Tfs Path: CentralTestPlan\ISH\Linux(Ubuntu)\BAT\Check Sensors aliveness
+Is Automated: Full
+Automation Test Name: Tests\SoftwareTests.dll /run=SoftwareTests.UbtSensorCoreTestFixture.CheckSensorAlive(Accelerometer,1)/noshadow /result=IshTester-Logs\TestResults\CheckSensorAlive(Accelerometer,1).xml
+FAIL: Test Name is not correct.
+
+ID: 1034312
+Title: Check Sensors aliveness accel_3d
+Tfs Path: CentralTestPlan\ISH\Linux(Ubuntu)\BAT\Check Sensors aliveness
+Is Automated: Full
+Automation Test Name: Tests\SoftwareTests.dll /run=SoftwareTests.UbtSensorCoreTestFixture.CheckSensorAlive(Accelerometer,1)/noshadow /result=IshTester-Logs\TestResults\CheckSensorAlive(Accelerometer,1).xml
+FAIL: Test Name is not correct.
+
+ID: 1034505
+Title: Report Interval press(100)
+Tfs Path: CentralTestPlan\ISH\Linux(Ubuntu)\BAT\Report interval
+Is Automated: Full
+Automation Test Name: Tests\SoftwareTests.dll /run=SoftwareTests.UbtSensorCoreTestFixture.CheckSensorReportInterval(Pressure,100)/noshadow /result=IshTester-Logs\TestResults\CheckSensorReportInterval(Pressure,100).xml
+FAIL: Test Name is not correct.
+
+ID: 1445584
+Title:  ISH SW is loaded correctly after power Off- Power On
+Tfs Path: CentralTestPlan\ISH\Linux(Ubuntu)\BAT\Power
+Is Automated: Full
+Automation Test Name: Tests\LinuxTests.dll /run=LinuxTests.CheckSensorTestFixture.RecoveryAfterSxTest(5,ColdReset,"CheckSW") /noshadow /result=IshTester-Logs\TestResults\RecoveryAfterSxTest(5,ColdReset,"CheckSW").xml
+FAIL: Test Name is not correct.
+
+------------------------------------

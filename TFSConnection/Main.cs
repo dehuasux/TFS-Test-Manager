@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 using System.Configuration;
 using Microsoft.TeamFoundation.Client;
 using Microsoft.TeamFoundation.Framework.Client;
-using Microsoft.TeamFoundation.TestManagement.Client;
 using Microsoft.TeamFoundation.Framework.Common;
-using Microsoft.TeamFoundation.WorkItemTracking.Client;
+using Microsoft.TeamFoundation.TestManagement.Client;
+using Microsoft.TeamFoundation.TestManagement.Common;
 using NUnit.Framework;
 using NUnit.Core;
 using NUnit.Core.Extensibility;
@@ -105,7 +105,7 @@ namespace TFSTest
                             continue;
                         }
                         testDllName = GetDllName(testcase);
-                        string path = ConfigurationManager.AppSettings["dllPath"] + @"\Tests\" + testDllName;
+                        string path = ConfigurationManager.AppSettings["dllPath"] + @"Tests\" + testDllName;
                         testCaseCollection.Clear();
                         if (File.Exists(path))
                         {

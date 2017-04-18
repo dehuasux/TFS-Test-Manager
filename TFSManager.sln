@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFSTestManager", "TFSConnection\TFSTestManager.csproj", "{681E696C-7A9B-4EBC-834D-82CEF124E007}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFSTestManagerTests", "UnitTestProject\TFSTestManagerTests.csproj", "{6A53A584-C7D0-4221-97DA-1299E8B8C41F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFSCycleManager", "TFSCycleManager\TFSCycleManager.csproj", "{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFSUpdateCycle", "TFSUpdateCycle\TFSUpdateCycle.csproj", "{45E1D2EE-056B-455E-96F9-7C3E329F0B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFSCreateCycle", "TFSCreateCycle\TFSCreateCycle.csproj", "{F5B9C517-58A6-4954-94C1-89F89B12F3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,34 @@ Global
 		{6A53A584-C7D0-4221-97DA-1299E8B8C41F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6A53A584-C7D0-4221-97DA-1299E8B8C41F}.Release|x64.ActiveCfg = Release|Any CPU
 		{6A53A584-C7D0-4221-97DA-1299E8B8C41F}.Release|x86.ActiveCfg = Release|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Release|x64.ActiveCfg = Release|Any CPU
+		{13A5B0B2-4D92-4CEE-9FF6-570C3EE3DF78}.Release|x86.ActiveCfg = Release|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Release|x64.ActiveCfg = Release|Any CPU
+		{45E1D2EE-056B-455E-96F9-7C3E329F0B62}.Release|x86.ActiveCfg = Release|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Debug|x64.Build.0 = Debug|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Debug|x86.Build.0 = Debug|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Release|x64.ActiveCfg = Release|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Release|x64.Build.0 = Release|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Release|x86.ActiveCfg = Release|Any CPU
+		{F5B9C517-58A6-4954-94C1-89F89B12F3CB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
